@@ -223,6 +223,9 @@ export default function VolcanoLoader(props) {
   };
 
   const currentExecutingWorkflowStyling = { ...outletStyling, flexGrow: "0" };
+  
+  const isHeatOn = useSelector((state) => state.deviceInteraction.isHeatOn);
+
   return (
     <ScrollingDiv className="main-div">
       {
@@ -235,7 +238,7 @@ export default function VolcanoLoader(props) {
             <Navbar.Brand>
               <StyledHeaderNavDiv onClick={onLinkClick} to="/Volcano/App">              
                 { theme.logo ? 
-                  <theme.logo style={{ width: 'auto', height: '2.5em', marginTop: '0.5em' }} /> : 
+                  <theme.logo style={{ color: (isHeatOn ? theme.iconColor : theme.primaryFontColor), height: '40px', width: 'auto' }} /> : 
                   <PrideTextWithDiv text="Project Onyx" />
                 }
                 <AutoOff style={{ marginLeft: "10px" }} />
