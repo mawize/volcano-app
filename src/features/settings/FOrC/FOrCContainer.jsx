@@ -21,11 +21,10 @@ export default function FOrCContainer() {
     };
     AddToQueue(blePayload);
   };
-
-  const nextTemperatureScaleAbbreviation = isF ? "C" : "F";
+  
   return (
     <FOrC
-      temperatureScaleAbbreviation={nextTemperatureScaleAbbreviation}
+      isFahrenheit={isF}
       onClick={onClick}
     />
   );
