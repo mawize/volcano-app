@@ -1,10 +1,10 @@
 import { sb_lightThemeId } from "../constants/themeIds";
 
-
 const backgroundColor = "#F6F6F6";
 const defaultTextColor = "#373737";
 
 const buttonColor = "#373737";
+const buttonTextColor = "#F6F6F6"
 
 const primaryColor = "#FF6600";
 const primaryTextColor = "#F6F6F6";
@@ -21,6 +21,7 @@ const sb_light = {
   borderStyle: "solid",
   borderColor: primaryColor,
   buttonColorMain: buttonColor,
+  buttonTextColor: buttonTextColor,
   currentTemperatureColor: primaryColor,
   targetTemperatureColor: defaultTextColor,
   buttonActive: {
@@ -29,9 +30,9 @@ const sb_light = {
     borderColor: "#FF00FF",
   },
   backgroundColor: backgroundColor,
-  primaryFontColor: primaryColor,
+  primaryFontColor: defaultTextColor,
   iconColor: primaryColor,
-  iconTextColor: primaryColor,
+  iconTextColor: defaultTextColor,
   plusMinusButtons: {
     backgroundColor: secondaryColor,
     color: secondaryTextColor,
