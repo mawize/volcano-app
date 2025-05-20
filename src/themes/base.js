@@ -4,7 +4,7 @@ const base = () => {
     borderStyle: "solid",
     borderColor: "darkgray",
     buttonColorMain: "black",
-    buttonFontColor: "antiquewhite",
+    buttonFontColor: "inherit",
     currentTemperatureColor: "antiquewhite",
     targetTemperatureColor: "antiquewhite",
     buttonActive: {
