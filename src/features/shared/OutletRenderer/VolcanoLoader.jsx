@@ -230,9 +230,22 @@ export default function VolcanoLoader(props) {
   const [contentHeight, setContentHeight] = useState(520);
 
   useEffect(() => {
-    if (outletRef.current) {
-      setContentHeight(outletRef.current.scrollHeight);
+    const currentOutlet = outletRef.current;
+    const resizeObserver = new ResizeObserver((entries) => {
+      for (let entry of entries) {
+        setContentHeight(entry.target.scrollHeight);
+      }
+    });
+
+    if (currentOutlet) {
+      resizeObserver.observe(currentOutlet);
     }
+
+    return () => {
+      if (currentOutlet) {
+        resizeObserver.unobserve(currentOutlet);
+      }
+    };
   }, []);
 
   return (
