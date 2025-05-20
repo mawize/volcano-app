@@ -1,4 +1,5 @@
-import { sb_darkThemeId } from "../constants/themeIds";
+import { sb_darkThemeId } from "../../constants/themeIds";
+import { ReactComponent as VolcanoLogo } from './logo-v.svg';
 
 const backgroundColor = "#373737";
 const defaultTextColor = "#F6F6F6";
@@ -18,6 +19,7 @@ const temperatureRangeHigh = "#F5D020";
 const sb_dark = {
   themeId: sb_darkThemeId,
   author: "mawize",
+  logo: VolcanoLogo,
   borderStyle: "solid",
   borderColor: primaryColor,
   buttonColorMain: buttonColor,

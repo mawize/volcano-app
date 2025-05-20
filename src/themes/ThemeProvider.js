@@ -19,8 +19,8 @@ import GetAutoThemeId from "../constants/themeDates";
 import redscale from "./redScale";
 import purplescale from "./purpleScale";
 import autumnB from "./festivities/fall/autumnB";
-import sb_light from "./sb_light";
-import sb_dark from "./sb_dark";
+import sb_light from "./storzbickel/sb_light";
+import sb_dark from "./storzbickel/sb_dark";
 
 const deepMergeWithBase = (theme) => merge(base(), { ...theme });
 
