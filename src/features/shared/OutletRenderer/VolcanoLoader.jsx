@@ -246,6 +246,8 @@ export default function VolcanoLoader(props) {
     };
   }, []);
 
+  const isHeatOn = useSelector((state) => state.deviceInteraction.isHeatOn);
+
   return (
     <ScrollingDiv className="main-div">
       {
@@ -258,7 +260,7 @@ export default function VolcanoLoader(props) {
             <Navbar.Brand>
               <StyledHeaderNavDiv onClick={onLinkClick} to="/Volcano/App">              
                 { theme.logo ? 
-                  <theme.logo style={{ height: '40px' }} /> : 
+                  <theme.logo style={{ color: (isHeatOn ? theme.iconColor : theme.primaryFontColor), height: '40px' }} /> : 
                   <PrideTextWithDiv text="Project Onyx" />
                 }
                 <AutoOff style={{ marginLeft: "15px" }} />
