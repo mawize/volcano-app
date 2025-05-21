@@ -20,6 +20,7 @@ import redscale from "./redScale";
 import purplescale from "./purpleScale";
 import autumnB from "./festivities/fall/autumnB";
 import sb_light from "./sb_light";
+import sb_dark from "./sb_dark";
 
 const deepMergeWithBase = (theme) => merge(base(), { ...theme });
 
@@ -64,6 +65,8 @@ export default function GetTheme(type) {
       return deepMergeWithBase(autumnB);
     case themeIds.sb_lightThemeId:
       return deepMergeWithBase(sb_light);
+    case themeIds.sb_darkThemeId:
+      return deepMergeWithBase(sb_dark);
     default: {
       return GetTheme(GetAutoThemeId());
     }

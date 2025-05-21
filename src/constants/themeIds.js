@@ -18,3 +18,4 @@ export const halloweenId = "Halloween";
 export const autumnBId = "Autumn B.";
 export const aSuperSpecialAutoThemeSettingsId = "Auto Seasonal Rotate";
 export const sb_lightThemeId = "Storz & Bickel";
+export const sb_darkThemeId = "Storz & Bickel (dark)";

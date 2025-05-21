@@ -1,10 +1,9 @@
-import { sb_lightThemeId } from "../constants/themeIds";
+import { sb_darkThemeId } from "../constants/themeIds";
 
+const backgroundColor = "#373737";
+const defaultTextColor = "#F6F6F6";
 
-const backgroundColor = "#F6F6F6";
-const defaultTextColor = "#373737";
-
-const buttonColor = "#373737";
+const buttonColor = "#F6F6F6";
 
 const primaryColor = "#FF6600";
 const primaryTextColor = "#F6F6F6";
@@ -15,8 +14,8 @@ const secondaryTextColor = "#F6F6F6"
 const temperatureRangeLow = "#F53803";
 const temperatureRangeHigh = "#F5D020";
 
-const sb_light = {
-  themeId: sb_lightThemeId,
+const sb_dark = {
+  themeId: sb_darkThemeId,
   author: "mawize",
   borderStyle: "solid",
   borderColor: primaryColor,
@@ -60,4 +59,4 @@ const sb_light = {
   },
 };
 
-export default sb_light;
+export default sb_dark;
