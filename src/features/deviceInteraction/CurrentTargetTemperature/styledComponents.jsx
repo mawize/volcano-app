@@ -18,20 +18,15 @@ export const InactiveButton = styled.button`
   }
 `;
 
-export const ActiveButton = styled(InactiveButton)`
-  background-color: ${(props) => props.theme.buttonActive.backgroundColor};
-  color: ${(props) => props.theme.buttonActive.color};
-  border-color: ${(props) => props.theme.buttonActive.borderColor};
+export const PlusMinusButton = styled(InactiveButton)`
+  background-color: ${(props) => props.theme.plusMinusButtons.backgroundColor};
+  color: ${(props) => props.theme.plusMinusButtons.color};
+  border-color: ${(props) => props.theme.plusMinusButtons.borderColor};
 `;
 
 export const Div = styled.div`
   display: flex;
-  width: 48%;
-  flex-grow: 1;
+  flex-type: row;
+  gap: 2em;
   margin: 0px 2.5px 8px;
-
-  svg {
-    height: 2rem;
-    width: 2rem;
-  }
 `;
