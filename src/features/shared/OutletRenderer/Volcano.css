@@ -44,7 +44,7 @@
   overflow-y: auto;
 }
 
-svg {
+.svg-inline--fa {
   height: 2rem;
   width: 2rem;
   margin-right: 5px;

@@ -1,6 +1,8 @@
 import { sb_lightThemeId } from "../../constants/themeIds";
 import { ReactComponent as volcanoLogo } from './logo-v.svg';
 import volcanoImage from './img-v.jpg'
+import { ReactComponent as PlusIcon } from './plus-0.svg';
+import { ReactComponent as MinusIcon } from './minus-0.svg';
 
 const backgroundColor = "#F6F6F6";
 const defaultTextColor = "#373737";
@@ -38,7 +40,9 @@ const sb_light = {
   iconColor: primaryColor,
   iconTextColor: defaultTextColor,
   plusMinusButtons: {
-    backgroundColor: secondaryColor,
+    plusIcon: () => <PlusIcon />,
+    minusIcon: () => <MinusIcon />,
+    backgroundColor: 'transparent',
     color: secondaryTextColor,
     borderColor: "#FF00FF",
   },
