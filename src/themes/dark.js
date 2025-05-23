@@ -35,7 +35,7 @@ const dark = {
   workflowEditor: {
     accordianExpandedColor: "darkgray",
   },
-  ToggleButtons: {
+  ToggleButton: {
     Slider: {
       backgroundColor: "lightgray",
       borderColor: "#f8f9fa",

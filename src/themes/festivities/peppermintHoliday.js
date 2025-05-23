@@ -50,7 +50,7 @@ const christmas = {
   workflowEditor: {
     accordianExpandedColor: "#146B3A",
   },
-  ToggleButtons: {
+  ToggleButton: {
     Slider: {
       backgroundColor: "#3C8123",
       borderColor: "#f8f9fa",

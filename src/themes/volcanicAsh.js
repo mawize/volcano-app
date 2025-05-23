@@ -40,7 +40,7 @@ const volcanicAsh = {
     rangeBoxColor: "black",
     rangeBoxBorderColor: "orange",
   },
-  ToggleButtons: {
+  ToggleButton: {
     Slider: {
       backgroundColor: "#242526",
       borderColor: "#f8f9fa",

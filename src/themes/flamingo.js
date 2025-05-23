@@ -38,7 +38,7 @@ const flamingo = {
   workflowEditor: {
     accordianExpandedColor: "darkgray",
   },
-  ToggleButtons: {
+  ToggleButton: {
     Slider: {
       backgroundColor: "white",
       borderColor: "white",

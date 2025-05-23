@@ -36,7 +36,7 @@ const greenscale = {
   workflowEditor: {
     accordianExpandedColor: "#0fca06",
   },
-  ToggleButtons: {
+  ToggleButton: {
     Slider: {
       backgroundColor: "#B0B3B8",
       borderColor: "#f8f9fa",

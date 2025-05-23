@@ -36,7 +36,7 @@ const purplescale = {
   workflowEditor: {
     accordianExpandedColor: "#8e24aa",
   },
-  ToggleButtons: {
+  ToggleButton: {
     Slider: {
       backgroundColor: "#B0B3B8",
       borderColor: "#f8f9fa",

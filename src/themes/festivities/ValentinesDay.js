@@ -38,7 +38,7 @@ const valentinesDay = {
   workflowEditor: {
     accordianExpandedColor: "#ea379d",
   },
-  ToggleButtons: {
+  ToggleButton: {
     Slider: {
       backgroundColor: "gray",
       borderColor: "#f8f9fa",

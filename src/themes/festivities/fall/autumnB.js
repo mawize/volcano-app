@@ -39,7 +39,7 @@ const autumnB = {
   workflowEditor: {
     accordianExpandedColor: "#146B3A",
   },
-  ToggleButtons: {
+  ToggleButton: {
     Slider: {
       backgroundColor: primaryDark,
       borderorderColor: primaryLight,

@@ -47,7 +47,7 @@ const base = () => {
     workflowEditor: {
       accordianExpandedColor: "#D2D2D2",
     },
-    ToggleButtons: {
+    ToggleButton: {
       Slider: {
         backgroundColor: undefined,
         borderColor: "#f8f9fa",

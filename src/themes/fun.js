@@ -59,7 +59,7 @@ const pride = {
   workflowEditor: {
     accordianExpandedColor: "#2d3237",
   },
-  ToggleButtons: {
+  ToggleButton: {
     Slider: {
       backgroundColor: "white",
       borderColor: "#f8f9fa",

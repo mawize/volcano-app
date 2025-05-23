@@ -36,7 +36,7 @@ const redscale = {
   workflowEditor: {
     accordianExpandedColor: "#d32f2f",
   },
-  ToggleButtons: {
+  ToggleButton: {
     Slider: {
       backgroundColor: "#B0B3B8",
       borderColor: "#f8f9fa",

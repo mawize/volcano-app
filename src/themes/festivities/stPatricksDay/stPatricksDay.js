@@ -38,7 +38,7 @@ const feastOfSaintPatrick = {
   workflowEditor: {
     accordianExpandedColor: "#146B3A",
   },
-  ToggleButtons: {
+  ToggleButton: {
     Slider: {
       backgroundColor: "#009A49",
       borderColor: "#D9DF1D",
