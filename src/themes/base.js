@@ -16,6 +16,9 @@ const base = () => {
     backgroundColor: "black",
     textColor: "antiquewhite",
     iconColor: "rebeccapurple",
+    StartScreen: {
+      textColor: "rebeccapurple",
+    },
     Navigation: { 
       textColor: "rebeccapurple",
       borderColor: "rebeccapurple",

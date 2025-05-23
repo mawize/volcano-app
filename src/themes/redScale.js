@@ -15,7 +15,10 @@ const redscale = {
   borderColor: "#C0C0C0",
   backgroundColor: "black",
   textColor: "#f44336", // Brighter red for better visibility
-  iconColor: "#f44336", // Updated to match primary font color
+  iconColor: "#f44336",
+  StartScreen: {
+    textColor: "#f44336",
+  }, // Updated to match primary font color
   Navigation: { 
     textColor: "#f44336", // Consistent with other icon colors 
     borderColor: "#f44336"

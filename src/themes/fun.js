@@ -24,6 +24,9 @@ const pride = {
   },
   backgroundColor: "black",
   iconColor: "darkviolet",
+  StartScreen: {
+    textColor: "darkviolet",
+  },
   Navigation: { 
     textColor: "#ed75b3",
     borderColor: "darkviolet",

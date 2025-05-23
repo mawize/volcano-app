@@ -20,6 +20,9 @@ const light = {
   backgroundColor: "white",
   textColor: "black",
   iconColor: "#FF6600",
+  StartScreen: {
+    textColor: "#FF6600",
+  },
   Navigation: { 
     textColor: "black",
     borderColor: "#FF6600", 

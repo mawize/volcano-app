@@ -19,6 +19,9 @@ const dark = {
   backgroundColor: "black",
   textColor: "antiquewhite",
   iconColor: "darkviolet",
+  StartScreen: {
+    textColor: "darkviolet",
+  },
   Navigation: {
     borderColor: "darkviolet",
   },

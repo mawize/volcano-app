@@ -16,6 +16,9 @@ const greenscale = {
   backgroundColor: "black",
   textColor: "#0fca06",
   iconColor: "#0fca06",
+  StartScreen: {
+    textColor: "#0fca06",
+  },
   Navigation: { 
     textColor: "#0fca06", 
     borderColor: "#0fca06",

@@ -23,6 +23,9 @@ const autumnB = {
   },
   backgroundColor: background,
   iconColor: primaryColor,
+  StartScreen: {
+    textColor: primaryColor,
+  },
   Navigation: { 
     textColor: primaryLight, 
     borderColor: primaryColor,

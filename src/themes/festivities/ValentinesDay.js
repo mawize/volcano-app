@@ -23,6 +23,9 @@ const valentinesDay = {
   },
   backgroundColor: "black",
   iconColor: "#671168",
+  StartScreen: {
+    textColor: "#671168",
+  },
   Navigation: { 
     textColor: "#ed75b3", 
     borderColor: "#671168",

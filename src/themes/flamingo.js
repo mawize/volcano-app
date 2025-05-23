@@ -18,6 +18,9 @@ const flamingo = {
   backgroundColor: "black",
   textColor: "white",
   iconColor: "#e8d6ed",
+  StartScreen: {
+    textColor: "#e8d6ed",
+  },
   Navigation: { 
     textColor: "#e8d6ed",
     borderColor: "#e8d6ed",

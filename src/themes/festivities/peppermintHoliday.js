@@ -22,6 +22,9 @@ const christmas = {
   },
   backgroundColor: "black",
   iconColor: "#3C8123",
+  StartScreen: {
+    textColor: "#3C8123",
+  },
   Navigation: { 
     textColor: "white", 
     borderColor: "#3C8123",

@@ -16,6 +16,9 @@ const purplescale = {
   backgroundColor: "black",
   textColor: "#9c27b0", // Slightly lighter purple for visibility
   iconColor: "#9c27b0",
+  StartScreen: {
+    textColor: "#9c27b0",
+  },
   Navigation: { 
     textColor: "#9c27b0", 
     borderColor: "#9c27b0"

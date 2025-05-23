@@ -18,6 +18,9 @@ const volcanicAsh = {
   backgroundColor: "black",
   textColor: "white",
   iconColor: "#FF6600",
+  StartScreen: {
+    textColor: "#FF6600",
+  },
   Navigation: { 
     textColor: "white",
     borderColor: "#FF6600"

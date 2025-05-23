@@ -5,12 +5,12 @@ const Button = styled.button`
   min-height: 30px;
   height: 100vh;
   width: 100vw;
-  background-color: ${(props) => props.theme.backgroundColor};
+  background-color: ${(props) => props.theme.get("StartScreen.backgroundColor")};
   font-size: 30px;
-  color: ${(props) => props.theme.iconColor};
+  color: ${(props) => props.theme.get("StartScreen.textColor")};
   border-width: 0px;
-  border-style: ${(props) => props.theme.borderStyle};
-  border-color: ${(props) => props.theme.borderColor};
+  border-style: ${(props) => props.theme.get("StartScreen.borderStyle")};
+  border-color: ${(props) => props.theme.get("StartScreen.borderColor")};
 `;
 
 export default function Ble(props) {

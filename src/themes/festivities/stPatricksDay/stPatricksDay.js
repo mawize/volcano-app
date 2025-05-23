@@ -22,6 +22,9 @@ const feastOfSaintPatrick = {
   },
   backgroundColor: "black",
   iconColor: "#D9DF1D",
+  StartScreen: {
+    textColor: "#D9DF1D",
+  },
   Navigation: { 
     textColor: "white", 
     borderColor: "#D9DF1D",

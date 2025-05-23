@@ -3,21 +3,21 @@ import styled from "styled-components";
 import { PrideTextWithDiv } from "../../themes/PrideText";
 
 const Div = styled.div`
-  background-color: ${(props) => props.theme.backgroundColor};
-  color: ${(props) => props.theme.textColor};
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  background-color: ${(props) => props.theme.get("StartScreen.backgroundColor")};
+  color: ${(props) => props.theme.get("StartScreen.textColor")};
 `;
 
 export default function Loading() {
   return (
     <Div>
-      <Spinner animation="border" variant="primary" />
-      <Spinner animation="border" variant="secondary" />
-      <Spinner animation="border" variant="success" />
-      <Spinner animation="border" variant="danger" />
-      <Spinner animation="border" variant="warning" />
-      <Spinner animation="border" variant="info" />
-      <Spinner animation="border" variant="light" />
-      <Spinner animation="border" variant="dark" />
+      <Spinner animation="border" style={{ color: (props) => props.theme.get("StartScreen.iconColor") }} />
       <PrideTextWithDiv text="Establishing BLE Connection" />
     </Div>
   );
