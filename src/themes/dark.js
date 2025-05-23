@@ -1,19 +1,19 @@
 import { darkThemeId } from "../constants/themeIds";
 
-const buttonBackgroundColor = "#242526";
+const buttonbackgroundColor = "#242526";
 const dark = {
   themeId: darkThemeId,
   Button: { 
-    backgroundColor: buttonBackgroundColor,
+    backgroundColor: buttonbackgroundColor,
     Active: {
       textColor: "darkviolet",
-      backgroundColor: buttonBackgroundColor,
+      backgroundColor: buttonbackgroundColor,
       borderColor: "darkviolet",
     }
   },
   borderColor: "darkgray",
   PlusMinusButton: {
-    backgroundColor: buttonBackgroundColor,
+    backgroundColor: buttonbackgroundColor,
     borderColor: "darkgray",
   },
   backgroundColor: "black",
@@ -36,14 +36,16 @@ const dark = {
     accordianExpandedColor: "darkgray",
   },
   ToggleButtons: {
-    sliderBackgroundColorOn: "lightgray",
-    sliderBorderColorOn: "#f8f9fa",
-    onBackgroundColor: buttonBackgroundColor,
-    onBorderColor: "darkviolet",
-    onColor: "#fff",
-    offBackgroundColor: buttonBackgroundColor,
-    offBorderColor: "darkgray",
-    offColor: "#fff",
+    sliderColor: "lightgray",
+    sliderBorderColor: "#f8f9fa",
+    backgroundColor: buttonbackgroundColor,
+    borderColor: "darkgray",
+    textColor: "#fff",
+    Active: {
+      backgroundColor: buttonbackgroundColor,
+      borderColor: "darkviolet",
+      textColor: "#fff",
+    },
   },
 };
 

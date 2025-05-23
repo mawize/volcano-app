@@ -1,12 +1,12 @@
 import { funId } from "../constants/themeIds";
 
-const buttonBackgroundColor = "#201c1c";
+const buttonbackgroundColor = "#201c1c";
 
 const pride = {
   author: "ImACoderImACoderImACoder",
   themeId: funId,
   Button: { 
-    backgroundColor: buttonBackgroundColor,
+    backgroundColor: buttonbackgroundColor,
     Active: {
       textColor: "white",
       backgroundColor: "black",
@@ -18,7 +18,7 @@ const pride = {
   targetTemperatureColor: "#ed75b3",
   textColor: "white",
   PlusMinusButton: {
-    backgroundColor: buttonBackgroundColor,
+    backgroundColor: buttonbackgroundColor,
     borderColor: "#D2D2D2",
     textColor: "white",
   },
@@ -60,15 +60,17 @@ const pride = {
     accordianExpandedColor: "#2d3237",
   },
   ToggleButtons: {
-    sliderBackgroundColorOn: "white",
-    sliderBorderColorOn: "#f8f9fa",
-    onBackgroundColor:
-      "linear-gradient(180deg,rgb(255,0,0) 0% 16.77%,rgb(255 153 0) 16.77% 33.54%,rgb(236 255 0) 33.54% 50.31%,rgb(75 255 0) 50.31% 67.08%,rgb(18 0 255) 67.08% 83.85%,rgb(143,0,255) 83.85% 100%)",
-    onBorderColor: "gray",
-    onColor: "white",
-    offBackgroundColor: buttonBackgroundColor,
-    offBorderColor: "white",
-    offColor: "black",
+    sliderColor: "white",
+    sliderBorderColor: "#f8f9fa",
+    backgroundColor: buttonbackgroundColor,
+    borderColor: "white",
+    textColor: "black",
+    Active: {
+      backgroundColor:
+        "linear-gradient(180deg,rgb(255,0,0) 0% 16.77%,rgb(255 153 0) 16.77% 33.54%,rgb(236 255 0) 33.54% 50.31%,rgb(75 255 0) 50.31% 67.08%,rgb(18 0 255) 67.08% 83.85%,rgb(143,0,255) 83.85% 100%)",
+      borderColor: "gray",
+      textColor: "white",
+    }
   },
 };
 

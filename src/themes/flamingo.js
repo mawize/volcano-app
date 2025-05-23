@@ -39,14 +39,16 @@ const flamingo = {
     accordianExpandedColor: "darkgray",
   },
   ToggleButtons: {
-    sliderBackgroundColorOn: "white",
-    sliderBorderColorOn: "#white",
-    onBackgroundColor: "#e79fec",
-    onBorderColor: "#e79fec",
-    onColor: "#fff",
-    offBackgroundColor: "#fccddf",
-    offBorderColor: "#fccddf",
-    offColor: "#fff",
+    sliderColor: "white",
+    sliderBorderColor: "white",
+    backgroundColor: "#fccddf",
+    borderColor: "#fccddf",
+    textColor: "#fff",
+    Active: {
+      backgroundColor: "#e79fec",
+      borderColor: "#e79fec",
+      textColor: "#fff",
+    },
   },
 };
 

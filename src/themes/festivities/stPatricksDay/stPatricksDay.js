@@ -39,16 +39,18 @@ const feastOfSaintPatrick = {
     accordianExpandedColor: "#146B3A",
   },
   ToggleButtons: {
-    sliderBackgroundColorOn: "#FF7900",
-    sliderBackgroundColorOff: "#009A49",
-    sliderBorderColorOff: "#D9DF1D",
-    sliderBorderColorOn: "#FFF",
-    onBackgroundColor: `linear-gradient(to right, #009A49 33.33%, #fff 0, #fff 66.66%, #FF7900 0)`,
-    onBorderColor: "#D9DF1D",
-    onColor: "#e5d15d",
-    offBackgroundColor: "#009A49",
-    offBorderColor: "#FF7900",
-    offColor: "white",
+    sliderColor: "#009A49",
+    sliderBorderColor: "#D9DF1D",
+    backgroundColor: "#009A49",
+    borderColor: "#FF7900",
+    textColor: "white",
+    Active: {
+      sliderColor: "#FF7900",
+      sliderBorderColor: "#FFF",
+      backgroundColor: `linear-gradient(to right, #009A49 33.33%, #fff 0, #fff 66.66%, #FF7900 0)`,
+      borderColor: "#D9DF1D",
+      textColor: "#e5d15d",
+    }
   },
 };
 

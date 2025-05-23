@@ -1,6 +1,6 @@
 import { lightThemeId } from "../constants/themeIds";
 
-const buttonBackgroundColor = "lightgray";
+const buttonbackgroundColor = "lightgray";
 
 const light = {
   themeId: lightThemeId,
@@ -8,7 +8,7 @@ const light = {
   borderStyle: "solid",
   borderColor: "#FF6600",
   Button: { 
-    backgroundColor: buttonBackgroundColor,
+    backgroundColor: buttonbackgroundColor,
     Active: {
       textColor: "white",
       backgroundColor: "#FF6600",
@@ -28,7 +28,7 @@ const light = {
     borderColor: "#FF6600", 
   },
   PlusMinusButton: {
-    backgroundColor: buttonBackgroundColor,
+    backgroundColor: buttonbackgroundColor,
     textColor: "black",
     borderColor: "FF6600",
   },
@@ -43,15 +43,17 @@ const light = {
     rangeBoxBorderColor: "orange",
   },
   ToggleButtons: {
-    sliderBackgroundColorOn: "#FF6600",
-    sliderBackgroundColorOff: buttonBackgroundColor,
-    sliderBorderColorOn: "#f8f9fa",
-    onBackgroundColor: "#FF6600",
-    onBorderColor: "black",
-    onColor: "#fff",
-    offBackgroundColor: buttonBackgroundColor,
-    offBorderColor: "black",
-    offColor: "black",
+    sliderColor: buttonbackgroundColor,
+    sliderBorderColor: "#f8f9fa",
+    backgroundColor: buttonbackgroundColor,
+    borderColor: "black",
+    textColor: "black",
+    Active: {
+      sliderColor: "#FF6600",
+      backgroundColor: "#FF6600",
+      borderColor: "black",
+      textColor: "#fff",
+    }
   },
 };
 

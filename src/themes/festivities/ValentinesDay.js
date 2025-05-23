@@ -1,12 +1,12 @@
 import { valentinesDayId } from "../../constants/themeIds";
 
-const buttonBackgroundColor = "#ed5eb3";
+const buttonbackgroundColor = "#ed5eb3";
 
 const valentinesDay = {
   author: "Princess Ariel",
   themeId: valentinesDayId,
   Button: { 
-    backgroundColor: buttonBackgroundColor,
+    backgroundColor: buttonbackgroundColor,
     Active: {
       textColor: "white",
       backgroundColor: "#7D1641",
@@ -39,14 +39,16 @@ const valentinesDay = {
     accordianExpandedColor: "#ea379d",
   },
   ToggleButtons: {
-    sliderBackgroundColorOn: "gray",
-    sliderBorderColorOn: "#f8f9fa",
-    onBackgroundColor: "#bb27ff",
-    onBorderColor: "#bb27ff",
-    onColor: "#fff",
-    offBackgroundColor: "#8d1b93",
-    offBorderColor: "#8d1b93",
-    offColor: "#fff",
+    sliderColor: "gray",
+    sliderBorderColor: "#f8f9fa",
+    backgroundColor: "#8d1b93",
+    borderColor: "#8d1b93",
+    textColor: "#fff",
+    Active: {
+      backgroundColor: "#bb27ff",
+      borderColor: "#bb27ff",
+      textColor: "#fff",
+    }
   },
 };
 

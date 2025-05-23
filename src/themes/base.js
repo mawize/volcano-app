@@ -42,20 +42,21 @@ const base = () => {
       accordianExpandedColor: "#D2D2D2",
     },
     ToggleButtons: {
-      sliderBackgroundColorOn: "gray",
-      sliderBackgroundColorOff: undefined,
-      sliderBorderColorOn: "#f8f9fa",
-      sliderBorderColorOff: "#f8f9fa",
-      onBackgroundColor: "#198754",
-      onBorderColor: "#198754",
-      onColor: "#fff",
-      offBackgroundColor: "#dc3545",
-      offBorderColor: "#dc3545",
-      offColor: "#fff",
+      sliderColor: undefined,
+      sliderBorderColor: "#f8f9fa",
+      backgroundColor: "#dc3545",
+      borderColor: "#dc3545",
+      textColor: "#fff",
+      Active: {
+        sliderColor: "gray",
+        backgroundColor: "#198754",
+        borderColor: "#198754",
+        textColor: "#fff",
+      },
       backgroundImageOn: undefined,
-      backgroundImageOff: undefined,
       backgroundBlendModeOn: "unset",
-      backgroundBlendModeOff: "unset",
+      backgroundImageOff: undefined,
+      backgroundBlendModeOff: "unset"
     },
   };
 };

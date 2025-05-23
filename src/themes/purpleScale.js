@@ -37,15 +37,17 @@ const purplescale = {
     accordianExpandedColor: "#8e24aa",
   },
   ToggleButtons: {
-    sliderBackgroundColorOn: "#8e24aa",
-    sliderBackgroundColorOff: "#B0B3B8",
-    sliderBorderColorOn: "#f8f9fa",
-    onBackgroundColor: "#8e24aa",
-    onBorderColor: "white",
-    onColor: "white",
-    offBackgroundColor: "#242526",
-    offBorderColor: "#C0C0C0",
-    offColor: "#8e24aa",
+    sliderColor: "#B0B3B8",
+    sliderBorderColor: "#f8f9fa",
+    backgroundColor: "#242526",
+    borderColor: "#C0C0C0",
+    textColor: "#8e24aa",
+    Active: {
+      sliderColor: "#8e24aa",
+      backgroundColor: "#8e24aa",
+      borderColor: "white",
+      textColor: "white",
+    }
   },
 };
 

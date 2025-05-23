@@ -42,15 +42,17 @@ const volcanicAsh = {
     rangeBoxBorderColor: "#FF6600",
   },
   ToggleButtons: {
-    sliderBackgroundColorOff: "#570CA0",
-    sliderBackgroundColorOn: "#32CD32",
-    sliderBorderColorOn: "#f8f9fa",
-    onBackgroundColor: "#FF6600",
-    onBorderColor: "white",
-    onColor: "#fff",
-    offBackgroundColor: "#570CA0",
-    offBorderColor: "#32CD32",
-    offColor: "#32CD32",
+    sliderColor: "#570CA0",
+    sliderBorderColor: "#f8f9fa",
+    backgroundColor: "#570CA0",
+    borderColor: "#32CD32",
+    textColor: "#32CD32",
+    Active: {      
+      sliderColor: "#32CD32",
+      backgroundColor: "#FF6600",
+      borderColor: "white",
+      textColor: "#fff",
+    }
   },
 };
 
