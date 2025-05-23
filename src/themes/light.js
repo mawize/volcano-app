@@ -21,7 +21,8 @@ const light = {
   textColor: "black",
   iconColor: "#FF6600",
   Navigation: { 
-    textColor: "black", 
+    textColor: "black",
+    borderColor: "#FF6600", 
   },
   PlusMinusButton: {
     backgroundColor: buttonBackgroundColor,

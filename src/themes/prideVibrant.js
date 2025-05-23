@@ -26,6 +26,7 @@ const pride = {
   iconColor: "darkviolet",
   Navigation: { 
     textColor: "#ed75b3", 
+    borderColor: "darkviolet",
   },
   temperatureRange: {
     lowTemperatureColor: "red",

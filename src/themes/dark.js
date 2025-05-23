@@ -19,6 +19,9 @@ const dark = {
   backgroundColor: "black",
   textColor: "antiquewhite",
   iconColor: "darkviolet",
+  Navigation: {
+    borderColor: "darkviolet",
+  },
   temperatureRange: {
     lowTemperatureColor: "#f53803",
     highTemperatureColor: "#f5d020",

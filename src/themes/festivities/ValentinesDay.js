@@ -25,6 +25,7 @@ const valentinesDay = {
   iconColor: "#671168",
   Navigation: { 
     textColor: "#ed75b3", 
+    borderColor: "#671168",
   },
   temperatureRange: {
     background: "linear-gradient(315deg, red 0%, #ff5d7a 74%)",

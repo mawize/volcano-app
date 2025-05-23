@@ -24,6 +24,7 @@ const christmas = {
   iconColor: "#165B33",
   Navigation: { 
     textColor: "white", 
+    borderColor: "#165B33",
   },
   temperatureRange: {
     background: `linear-gradient(

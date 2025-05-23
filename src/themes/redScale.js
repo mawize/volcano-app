@@ -18,6 +18,7 @@ const redscale = {
   iconColor: "#f44336", // Updated to match primary font color
   Navigation: { 
     textColor: "#f44336", // Consistent with other icon colors 
+    borderColor: "#f44336"
   },
   temperatureRange: {
     background: "linear-gradient(315deg, #d32f2f 0%, #e57373 74%)", // Updated gradient for smoother transition

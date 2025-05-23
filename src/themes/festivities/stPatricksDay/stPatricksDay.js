@@ -24,6 +24,7 @@ const feastOfSaintPatrick = {
   iconColor: "#D9DF1D",
   Navigation: { 
     textColor: "white", 
+    borderColor: "#D9DF1D",
   },
   temperatureRange: {
     background:

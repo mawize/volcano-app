@@ -15,7 +15,8 @@ const grayscale = {
   textColor: "#E4E6EB",
   iconColor: "#3A3B3C",
   Navigation: { 
-    textColor: "#E4E6EB"
+    textColor: "#E4E6EB",
+    borderColor: "#3A3B3C",
   },
   temperatureRange: {
     background: "linear-gradient(315deg, #B0B3B8 0%, #242526 74%)",

@@ -18,6 +18,7 @@ const purplescale = {
   iconColor: "#9c27b0",
   Navigation: { 
     textColor: "#9c27b0", 
+    borderColor: "#9c27b0"
   },
   temperatureRange: {
     background: "linear-gradient(315deg, #8e24aa 0%, #ba68c8 74%)", // Gradient from vibrant to light purple
