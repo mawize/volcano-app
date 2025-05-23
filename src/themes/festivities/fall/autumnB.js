@@ -23,7 +23,9 @@ const autumnB = {
   },
   backgroundColor: background,
   iconColor: primaryColor,
-  iconTextColor: primaryLight,
+  Navigation: { 
+    textColor: primaryLight, 
+  },
   temperatureRange: {
     background: `linear-gradient(90deg, rgba(211,84,0,1) 20%, rgba(229,152,102,1) 57%, rgba(255,102,0,1) 87%, rgba(160,64,0,1) 100%)`,
 

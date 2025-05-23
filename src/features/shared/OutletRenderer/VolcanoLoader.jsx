@@ -40,12 +40,12 @@ import AutoOff from "../../deviceInteraction/AutoOff/AutoOff";
 const ScrollingDiv = withScrolling("div");
 
 const StyledNavBar = styled(Navbar)`
-  background: ${(props) => props.theme.backgroundColor};
+  background: ${(props) => props.theme.get("Navigation.backgroundColor")};
 `;
 
 const StyledNavBarToggle = styled(Navbar.Toggle)`
-  background: ${(props) => props.theme.backgroundColor};
-  border-color: ${(props) => props.theme.iconColor} !important;
+  background: ${(props) => props.theme.get("Navigation.backgroundColor")};
+  border-color: ${(props) => props.theme.get("Navigation.iconColor")} !important;
   border-width: light;
   padding: 5px;
 `;

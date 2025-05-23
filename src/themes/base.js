@@ -16,7 +16,9 @@ const base = () => {
     backgroundColor: "black",
     textColor: "antiquewhite",
     iconColor: "rebeccapurple",
-    iconTextColor: "rebeccapurple",
+    Navigation: { 
+      textColor: "rebeccapurple"
+    },
     PlusMinusButton: {
       backgroundColor: "black",
       color: "inherit",

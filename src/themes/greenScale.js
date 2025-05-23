@@ -16,7 +16,9 @@ const greenscale = {
   backgroundColor: "black",
   textColor: "#0fca06",
   iconColor: "#0fca06",
-  iconTextColor: "#0fca06",
+  Navigation: { 
+    textColor: "#0fca06", 
+  },
   temperatureRange: {
     background: "linear-gradient(315deg,  #0fca06 0%, #B0B3B8 74%)",
     rangeBoxColor: "#0fca06",

@@ -16,7 +16,9 @@ const redscale = {
   backgroundColor: "black",
   textColor: "#f44336", // Brighter red for better visibility
   iconColor: "#f44336", // Updated to match primary font color
-  iconTextColor: "#f44336", // Consistent with other icon colors
+  Navigation: { 
+    textColor: "#f44336", // Consistent with other icon colors 
+  },
   temperatureRange: {
     background: "linear-gradient(315deg, #d32f2f 0%, #e57373 74%)", // Updated gradient for smoother transition
     rangeBoxColor: "#d32f2f",

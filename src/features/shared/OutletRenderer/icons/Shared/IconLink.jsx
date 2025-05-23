@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const StyledRouterIconLink = styled(Link)`
   display: flex;
   align-items: center;
-  color: ${(props) => props.theme.iconTextColor};
+  color: ${(props) => props.theme.get("Navigation.textColor")};
   text-align: center;
   margin-bottom: 10px;
   text-decoration: none;

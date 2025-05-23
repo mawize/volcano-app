@@ -18,7 +18,9 @@ const flamingo = {
   backgroundColor: "black",
   textColor: "white",
   iconColor: "#e8d6ed",
-  iconTextColor: "#e8d6ed",
+  Navigation: { 
+    textColor: "#e8d6ed"
+  },
   PlusMinusButton: {
     backgroundColor: "#e79fec",
     textColor: "white",

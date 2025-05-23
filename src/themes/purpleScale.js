@@ -16,7 +16,9 @@ const purplescale = {
   backgroundColor: "black",
   textColor: "#9c27b0", // Slightly lighter purple for visibility
   iconColor: "#9c27b0",
-  iconTextColor: "#9c27b0",
+  Navigation: { 
+    textColor: "#9c27b0", 
+  },
   temperatureRange: {
     background: "linear-gradient(315deg, #8e24aa 0%, #ba68c8 74%)", // Gradient from vibrant to light purple
     rangeBoxColor: "#8e24aa",
