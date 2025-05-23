@@ -3,20 +3,22 @@ import { christmasId } from "../../constants/themeIds";
 const christmas = {
   author: "ImACoderImACoderImACoder",
   themeId: christmasId,
-  buttonColorMain: "#146B3A",
+  Button: { 
+    backgroundColor: "#146B3A",
+    Active: {
+      textColor: "white",
+      backgroundColor: "#BB2528",
+      borderColor: "white",
+    }
+  },
   borderColor: "#BB2528",
   currentTemperatureColor: "#BB2528",
   targetTemperatureColor: "#146B3A",
   textColor: "white",
-  plusMinusButtons: {
+  PlusMinusButton: {
     borderColor: "#BB2528",
     backgroundColor: "#146B3A",
-    color: "white",
-  },
-  buttonActive: {
-    color: "white",
-    backgroundColor: "#BB2528",
-    borderColor: "white",
+    textColor: "white",
   },
   backgroundColor: "black",
   iconColor: "#165B33",

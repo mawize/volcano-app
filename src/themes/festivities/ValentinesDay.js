@@ -5,19 +5,21 @@ const buttonBackgroundColor = "#ed5eb3";
 const valentinesDay = {
   author: "Princess Ariel",
   themeId: valentinesDayId,
-  buttonColorMain: buttonBackgroundColor,
+  Button: { 
+    backgroundColor: buttonBackgroundColor,
+    Active: {
+      textColor: "white",
+      backgroundColor: "#7D1641",
+      borderColor: "white",
+    }
+  },
   borderColor: "#ea379d",
   currentTemperatureColor: "#ed75b3",
   targetTemperatureColor: "#ed75b3",
   textColor: "white",
-  plusMinusButtons: {
+  PlusMinusButton: {
     backgroundColor: "#7D1641",
-    color: "#ed75b3",
-  },
-  buttonActive: {
-    color: "white",
-    backgroundColor: "#7D1641",
-    borderColor: "white",
+    textColor: "#ed75b3",
   },
   backgroundColor: "black",
   iconColor: "#671168",

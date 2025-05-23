@@ -3,20 +3,22 @@ import { feastOfSaintPatrickId } from "../../../constants/themeIds";
 const feastOfSaintPatrick = {
   author: "ImACoderImACoderImACoder",
   themeId: feastOfSaintPatrickId,
-  buttonColorMain: "#009A49",
+  Button: { 
+    backgroundColor: "#009A49",
+    Active: {
+      textColor: "white",
+      backgroundColor: "#FF7900",
+      borderColor: "#D9DF1D",
+    }
+  },
   borderColor: "#FF7900",
   currentTemperatureColor: "#FF7900",
   targetTemperatureColor: "white",
   textColor: "white",
-  plusMinusButtons: {
+  PlusMinusButton: {
     borderColor: "#FF7900",
     backgroundColor: "#009A49",
-    color: "white",
-  },
-  buttonActive: {
-    color: "white",
-    backgroundColor: "#FF7900",
-    borderColor: "#D9DF1D",
+    textColor: "white",
   },
   backgroundColor: "black",
   iconColor: "#D9DF1D",

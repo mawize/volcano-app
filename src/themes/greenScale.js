@@ -3,14 +3,16 @@ import { greenscaleId } from "../constants/themeIds";
 const greenscale = {
   author: "ImACoderImACoderImACoder/ayebizz",
   themeId: greenscaleId,
-  buttonColorMain: "#242526",
+  Button: { 
+    backgroundColor: "#242526",
+    Active: {
+      textColor: "white",
+      backgroundColor: "#0fca06",
+      borderColor: "white",
+    }
+  },
   currentTemperatureColor: "#0fca06",
   borderColor: "#B0B3B8",
-  buttonActive: {
-    color: "white",
-    backgroundColor: "#0fca06",
-    borderColor: "white",
-  },
   backgroundColor: "black",
   textColor: "#0fca06",
   iconColor: "#0fca06",
@@ -20,9 +22,9 @@ const greenscale = {
     rangeBoxColor: "#0fca06",
     rangeBoxBorderColor: "white",
   },
-  plusMinusButtons: {
+  PlusMinusButton: {
     backgroundColor: "#242526",
-    color: "#0fca06",
+    textColor: "#0fca06",
     borderColor: "#B0B3B8",
   },
   workflowEditor: {

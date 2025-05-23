@@ -2,13 +2,15 @@ import { grayscaleId } from "../constants/themeIds";
 
 const grayscale = {
   themeId: grayscaleId,
-  buttonColorMain: "#242526",
-  borderColor: "#B0B3B8",
-  buttonActive: {
-    color: "white",
-    backgroundColor: "#AAAAAA",
-    borderColor: "black",
+  Button: { 
+    backgroundColor: "#242526",
+    Active: {
+      textColor: "white",
+      backgroundColor: "#AAAAAA",
+      borderColor: "black",
+    }
   },
+  borderColor: "#B0B3B8",
   backgroundColor: "#18191A",
   textColor: "#E4E6EB",
   iconColor: "#3A3B3C",
@@ -18,9 +20,9 @@ const grayscale = {
     rangeBoxColor: "#242526",
     rangeBoxBorderColor: "#B0B3B8",
   },
-  plusMinusButtons: {
+  PlusMinusButton: {
     backgroundColor: "#242526",
-    color: "#E4E6EB",
+    textColor: "#E4E6EB",
     borderColor: "#B0B3B8",
   },
   workflowEditor: {

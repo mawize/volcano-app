@@ -7,17 +7,19 @@ const background = "#190808";
 const autumnB = {
   author: "ImACoderImACoderImACoder/Autumn B.",
   themeId: autumnBId,
-  buttonColorMain: primaryDark,
+  Button: { 
+    backgroundColor: primaryDark,
+    Active: {
+      textColor: primaryDark,
+      backgroundColor: primaryLight,
+    }
+  },
   currentTemperatureColor: primaryLight,
   targetTemperatureColor: primaryDark,
   textColor: primaryLight,
-  plusMinusButtons: {
+  PlusMinusButton: {
     backgroundColor: primaryDark,
-    color: primaryLight,
-  },
-  buttonActive: {
-    color: primaryDark,
-    backgroundColor: primaryLight,
+    textColor: primaryLight,
   },
   backgroundColor: background,
   iconColor: primaryColor,

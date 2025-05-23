@@ -1,12 +1,11 @@
-import { Div } from "./styledComponents";
-import { PlusMinusButton as StyledPlusMinusButton } from "./styledComponents";
+import { Div, InactiveButton } from "./styledComponents";
 
 function PlusMinusButton(props) {
   return (
     <Div>
-      <StyledPlusMinusButton {...props}>
+      <InactiveButton hierarchy="Button.TempControlButton.PlusMinusButton" {...props}>
         {props.buttonText}
-      </StyledPlusMinusButton>
+      </InactiveButton>
     </Div>
   );
 }

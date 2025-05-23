@@ -1,33 +1,18 @@
 import styled from "styled-components";
+import Button from "../../shared/styledComponents/Button";
 
-export const InactiveButton = styled.button`
+export const InactiveButton = styled(Button)`
   font-size: 1.25rem;
   min-height: 2.75rem;
   flex-grow: 1;
   border-width: 0.15rem;
-  background-color: ${(props) => props.theme.buttonColorMain};
-  color: ${(props) => props.theme.textColor};
   border-radius: 2rem;
-  border-color: ${(props) => props.theme.borderColor};
-  border-style: ${(props) => props.theme.borderStyle};
-  border-width: 0px;
-  &:active {
-    background-color: ${(props) => props.theme.buttonActive.backgroundColor};
-    color: ${(props) => props.theme.buttonActive.color};
-    border-color: ${(props) => props.theme.buttonActive.borderColor};
-  }
 `;
 
 export const ActiveButton = styled(InactiveButton)`
-  background-color: ${(props) => props.theme.buttonActive.backgroundColor};
-  color: ${(props) => props.theme.buttonActive.color};
-  border-color: ${(props) => props.theme.buttonActive.borderColor};
-`;
-
-export const PlusMinusButton = styled(InactiveButton)`
-  background-color: ${(props) => props.theme.plusMinusButtons.backgroundColor};
-  color: ${(props) => props.theme.plusMinusButtons.color};
-  border-color: ${(props) => props.theme.plusMinusButtons.borderColor};
+  background-color: ${(props) => props.theme.get(`${props.hierarchy}.Active.backgroundColor`)};
+  color: ${(props) => props.theme.get(`${props.hierarchy}.Active.textColor`)};
+  border-color: ${(props) => props.theme.get(`${props.hierarchy}.Active.borderColor`)};
 `;
 
 export const Div = styled.div`

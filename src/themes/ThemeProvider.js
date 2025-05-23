@@ -22,7 +22,7 @@ import autumnB from "./festivities/fall/autumnB";
 
 const deepMergeWithBase = (theme) => merge(base(), { ...theme });
 
-export default function GetTheme(type) {
+function resolveTheme(type) {
   switch (type) {
     case themeIds.darkThemeId:
       return deepMergeWithBase(dark);
@@ -65,4 +65,50 @@ export default function GetTheme(type) {
       return GetTheme(GetAutoThemeId());
     }
   }
+}
+
+function resolveProperty(theme, path) {
+  const parts = path.split('.');
+  const last = parts[parts.length - 1];
+  const secondToLast = parts[parts.length - 2];
+  const states = ['Active', 'Focus', 'Pressed', 'Hover'];
+  
+  let components, state, property;
+  
+  if (parts.length >= 2 && states.includes(secondToLast)) {
+    state = secondToLast;
+    property = last;
+    components = parts.slice(0, -2);
+  } else {
+    state = null;
+    property = last;
+    components = parts.slice(0, -1);
+  }
+  
+  const compsReversed = components.slice().reverse();
+  
+  if (state) {
+    for (const comp of compsReversed) {
+      if (theme[comp] && theme[comp][state] && theme[comp][state][property] !== undefined) {
+        return theme[comp][state][property];
+      }
+    }
+    if (theme[state] && theme[state][property] !== undefined) {
+      return theme[state][property];
+    }
+  }
+  
+  for (const comp of compsReversed) {
+    if (theme[comp] && theme[comp][property] !== undefined) {
+      return theme[comp][property];
+    }
+  }
+  
+  return theme[property];
+};
+
+export default function GetTheme(type) {
+  const theme = resolveTheme(type)
+  theme.get = (path) => resolveProperty(theme, path);
+  return theme;
 }

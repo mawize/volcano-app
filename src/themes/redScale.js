@@ -3,14 +3,16 @@ import { redScaleId } from "../constants/themeIds";
 const redscale = {
   author: "ImACoderImACoderImACoder/ayebizz",
   themeId: redScaleId,
-  buttonColorMain: "#242526",
+  Button: { 
+    backgroundColor: "#242526",
+    Active: {
+      textColor: "white",
+      backgroundColor: "#b71c1c", // Darkened red for active state
+      borderColor: "white",
+    }
+  },
   currentTemperatureColor: "#d32f2f",
   borderColor: "#C0C0C0",
-  buttonActive: {
-    color: "white",
-    backgroundColor: "#b71c1c", // Darkened red for active state
-    borderColor: "white",
-  },
   backgroundColor: "black",
   textColor: "#f44336", // Brighter red for better visibility
   iconColor: "#f44336", // Updated to match primary font color
@@ -20,9 +22,9 @@ const redscale = {
     rangeBoxColor: "#d32f2f",
     rangeBoxBorderColor: "#C0C0C0",
   },
-  plusMinusButtons: {
+  PlusMinusButton: {
     backgroundColor: "#242526",
-    color: "#d32f2f",
+    textColor: "#d32f2f",
     borderColor: "#C0C0C0",
   },
   workflowEditor: {

@@ -3,20 +3,22 @@ import { christmasPeppermintHolidayId } from "../../constants/themeIds";
 const christmas = {
   author: "Princess Ariel",
   themeId: christmasPeppermintHolidayId,
-  buttonColorMain: "#9E1F15",
+  Button: { 
+    backgroundColor: "#9E1F15",
+    Active: {
+      textColor: "white",
+      backgroundColor: "#3C8123",
+      borderColor: "white",
+    }
+  },
   borderColor: "white",
   currentTemperatureColor: "#9E1F15",
   targetTemperatureColor: "#3C8123",
   textColor: "white",
-  plusMinusButtons: {
+  PlusMinusButton: {
     borderColor: "white",
     backgroundColor: "#9E1F15",
-    color: "white",
-  },
-  buttonActive: {
-    color: "white",
-    backgroundColor: "#3C8123",
-    borderColor: "white",
+    textColor: "white",
   },
   backgroundColor: "black",
   iconColor: "#3C8123",

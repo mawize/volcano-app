@@ -7,21 +7,23 @@ const light = {
   author: "ImACoderImACoderImACoder",
   borderStyle: "solid",
   borderColor: "#FF6600",
-  buttonColorMain: buttonBackgroundColor,
+  Button: { 
+    backgroundColor: buttonBackgroundColor,
+    Active: {
+      textColor: "white",
+      backgroundColor: "#FF6600",
+      borderColor: "white",
+    }
+  },
   currentTemperatureColor: "#FF6600",
   targetTemperatureColor: "black",
-  buttonActive: {
-    color: "white",
-    backgroundColor: "#FF6600",
-    borderColor: "white",
-  },
   backgroundColor: "white",
   textColor: "black",
   iconColor: "#FF6600",
   iconTextColor: "black",
-  plusMinusButtons: {
+  PlusMinusButton: {
     backgroundColor: buttonBackgroundColor,
-    color: "black",
+    textColor: "black",
     borderColor: "FF6600",
   },
   workflowEditor: {

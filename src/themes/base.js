@@ -3,19 +3,21 @@ const base = () => {
     author: "ImACoderImACoderImACoder",
     borderStyle: "solid",
     borderColor: "darkgray",
-    buttonColorMain: "black",
+    Button: { 
+      backgroundColor: "black",
+      Active: {
+        textColor: "white",
+        backgroundColor: "darkgray",
+        borderColor: "antiquewhite",
+      }
+    },
     currentTemperatureColor: "antiquewhite",
     targetTemperatureColor: "antiquewhite",
-    buttonActive: {
-      color: "white",
-      backgroundColor: "darkgray",
-      borderColor: "antiquewhite",
-    },
     backgroundColor: "black",
     textColor: "antiquewhite",
     iconColor: "rebeccapurple",
     iconTextColor: "rebeccapurple",
-    plusMinusButtons: {
+    PlusMinusButton: {
       backgroundColor: "black",
       color: "inherit",
       borderColor: "inherit",

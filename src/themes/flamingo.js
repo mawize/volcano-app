@@ -5,21 +5,23 @@ const flamingo = {
   author: "Alexis",
   borderStyle: "solid",
   borderColor: "darkgray",
-  buttonColorMain: "#e79fec",
+  Button: { 
+    backgroundColor: "#e79fec",
+    Active: {
+      textColor: "white",
+      backgroundColor: "#fccddf",
+      borderColor: "darkgray",
+    }
+  },
   currentTemperatureColor: "antiquewhite",
   targetTemperatureColor: "antiquewhite",
-  buttonActive: {
-    color: "white",
-    backgroundColor: "#fccddf",
-    borderColor: "darkgray",
-  },
   backgroundColor: "black",
   textColor: "white",
   iconColor: "#e8d6ed",
   iconTextColor: "#e8d6ed",
-  plusMinusButtons: {
+  PlusMinusButton: {
     backgroundColor: "#e79fec",
-    color: "white",
+    textColor: "white",
     borderColor: "inherit",
   },
   temperatureRange: {

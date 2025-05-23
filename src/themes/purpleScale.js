@@ -3,14 +3,16 @@ import { purpleScaleId } from "../constants/themeIds";
 const purplescale = {
   author: "ImACoderImACoderImACoder/ayebizz",
   themeId: purpleScaleId,
-  buttonColorMain: "#242526",
+  Button: { 
+    backgroundColor: "#242526",
+    Active: {
+      textColor: "white",
+      backgroundColor: "#6a1b9a", // Darker purple for active state
+      borderColor: "white",
+    }
+  },
   currentTemperatureColor: "#8e24aa", // A vibrant purple
   borderColor: "#C0C0C0",
-  buttonActive: {
-    color: "white",
-    backgroundColor: "#6a1b9a", // Darker purple for active state
-    borderColor: "white",
-  },
   backgroundColor: "black",
   textColor: "#9c27b0", // Slightly lighter purple for visibility
   iconColor: "#9c27b0",
@@ -20,9 +22,9 @@ const purplescale = {
     rangeBoxColor: "#8e24aa",
     rangeBoxBorderColor: "#C0C0C0",
   },
-  plusMinusButtons: {
+  PlusMinusButton: {
     backgroundColor: "#242526",
-    color: "#8e24aa",
+    textColor: "#8e24aa",
     borderColor: "#C0C0C0",
   },
   workflowEditor: {

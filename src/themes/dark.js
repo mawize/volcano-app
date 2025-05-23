@@ -3,14 +3,16 @@ import { darkThemeId } from "../constants/themeIds";
 const buttonBackgroundColor = "#242526";
 const dark = {
   themeId: darkThemeId,
-  buttonColorMain: buttonBackgroundColor,
-  borderColor: "darkgray",
-  buttonActive: {
-    color: "darkviolet",
+  Button: { 
     backgroundColor: buttonBackgroundColor,
-    borderColor: "darkviolet",
+    Active: {
+      textColor: "darkviolet",
+      backgroundColor: buttonBackgroundColor,
+      borderColor: "darkviolet",
+    }
   },
-  plusMinusButtons: {
+  borderColor: "darkgray",
+  PlusMinusButton: {
     backgroundColor: buttonBackgroundColor,
     borderColor: "darkgray",
   },

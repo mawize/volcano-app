@@ -5,20 +5,22 @@ const buttonBackgroundColor = "#201c1c";
 const pride = {
   author: "ImACoderImACoderImACoder",
   themeId: funId,
-  buttonColorMain: buttonBackgroundColor,
+  Button: { 
+    backgroundColor: buttonBackgroundColor,
+    Active: {
+      textColor: "white",
+      backgroundColor: "black",
+      borderColor: "darkviolet",
+    }
+  },
   borderColor: "#D2D2D2",
   currentTemperatureColor: "#ed75b3",
   targetTemperatureColor: "#ed75b3",
   textColor: "white",
-  plusMinusButtons: {
+  PlusMinusButton: {
     backgroundColor: buttonBackgroundColor,
     borderColor: "#D2D2D2",
-    color: "white",
-  },
-  buttonActive: {
-    color: "white",
-    backgroundColor: "black",
-    borderColor: "darkviolet",
+    textColor: "white",
   },
   backgroundColor: "black",
   iconColor: "darkviolet",

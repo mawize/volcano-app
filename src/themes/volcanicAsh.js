@@ -5,21 +5,23 @@ const volcanicAsh = {
   author: "ImACoderImACoderImACoder",
   borderStyle: "solid",
   borderColor: "#FF6600",
-  buttonColorMain: "#242526",
+  Button: { 
+    backgroundColor: "#242526" ,
+    Active: {
+      textColor: "white",
+      backgroundColor: "#FF6600",
+      borderColor: "white",
+    },
+  },
   currentTemperatureColor: "#FF6600",
   targetTemperatureColor: "white",
-  buttonActive: {
-    color: "white",
-    backgroundColor: "#FF6600",
-    borderColor: "white",
-  },
   backgroundColor: "black",
   textColor: "white",
   iconColor: "#FF6600",
   iconTextColor: "white",
-  plusMinusButtons: {
+  PlusMinusButton: {
     backgroundColor: "#242526",
-    color: "white",
+    textColor: "white",
     borderColor: "FF6600",
   },
   workflowEditor: {
