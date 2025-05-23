@@ -69,9 +69,9 @@ const SwitchOnState = styled.span`
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
-  color: ${(props) => props.theme.ToggleButtons.Active.textColor};
-  background: ${(props) => props.theme.ToggleButtons.Active.backgroundColor};
-  border-color: ${(props) => props.theme.ToggleButtons.Active.borderColor};
+  color: ${(props) => props.theme.get("Button.ToggleButtons.Active.textColor")};
+  background: ${(props) => props.theme.get("Button.ToggleButtons.Active.backgroundColor")};
+  border-color: ${(props) => props.theme.get("Button.ToggleButtons.Active.borderColor")};
   text-shadow: 1px 1px black;
   font-size: xx-large;
   justify-content: center;
@@ -81,9 +81,9 @@ const SwitchOnState = styled.span`
 `;
 
 const SwitchOffState = styled(SwitchOnState)`
-  color: ${(props) => props.theme.ToggleButtons.textColor};
-  background: ${(props) => props.theme.ToggleButtons.backgroundColor};
-  border-color: ${(props) => props.theme.ToggleButtons.borderColor};
+  color: ${(props) => props.theme.get("Button.ToggleButtons.textColor")};
+  background: ${(props) => props.theme.get("Button.ToggleButtons.backgroundColor")};
+  border-color: ${(props) => props.theme.get("Button.ToggleButtons.borderColor")};
   left: 50%;
   right: 0;
 `;
@@ -113,18 +113,15 @@ const SwitchHandleOn = styled(SwitchOnState)`
   padding-bottom: 0px;
   height: 100%;
   width: 0px;
-  border-width: 0px;
-
   color: #000;
-  background: ${(props) => props.theme.ToggleButtons.Active.sliderColor};
-  border-color: ${(props) => props.theme.ToggleButtons.Active.sliderBorderColor};
+  border-width: ${(props) => props.theme.get("Button.ToggleButtons.Slider.Active.borderWidth")};
+  background: ${(props) => props.theme.get("Button.ToggleButtons.Slider.Active.backgroundColor")};
+  border-color: ${(props) => props.theme.get("Button.ToggleButtons.Slider.Active.borderColor")};
 `;
 
 const SwitchHandleOff = styled(SwitchHandleOn)`
-  background: ${(props) =>
-    props.theme.ToggleButtons.sliderColor ||
-    props.theme.ToggleButtons.Active.sliderColor};
-  border-color: ${(props) => props.theme.ToggleButtons.sliderBorderColor};
+  background: ${(props) => props.theme.get("Button.ToggleButtons.Slider.backgroundColor")};
+  border-color: ${(props) => props.theme.get("Button.ToggleButtons.Slider.borderColor")};
 `;
 
 const ToggleSwitch = React.forwardRef((props, ref) => {

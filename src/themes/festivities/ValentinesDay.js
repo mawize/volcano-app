@@ -39,8 +39,10 @@ const valentinesDay = {
     accordianExpandedColor: "#ea379d",
   },
   ToggleButtons: {
-    sliderColor: "gray",
-    sliderBorderColor: "#f8f9fa",
+    Slider: {
+      backgroundColor: "gray",
+      borderColor: "#f8f9fa",
+    },
     backgroundColor: "#8d1b93",
     borderColor: "#8d1b93",
     textColor: "#fff",

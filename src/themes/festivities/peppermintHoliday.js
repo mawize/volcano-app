@@ -51,13 +51,17 @@ const christmas = {
     accordianExpandedColor: "#146B3A",
   },
   ToggleButtons: {
-    sliderColor: "#3C8123",
-    sliderBorderColor: "#f8f9fa",
+    Slider: {
+      backgroundColor: "#3C8123",
+      borderColor: "#f8f9fa",
+      Active: {
+        backgroundColor: "#9E1F15",
+      }
+    },
     backgroundColor: "#BB2528",
     borderColor: "#3C8123",
     textColor: "#9E1F15",
-    Active: {      
-      sliderColor: "#9E1F15",
+    Active: {
       backgroundColor: "#3C8123",
       borderColor: "#BB2528",
       textColor: "#3C8123",

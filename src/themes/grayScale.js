@@ -35,8 +35,10 @@ const grayscale = {
     accordianExpandedColor: "#B0B3B8",
   },
   ToggleButtons: {
-    sliderColor: "#3A3B3C",
-    sliderBorderColor: "#f8f9fa",
+    Slider: {
+      backgroundColor: "#3A3B3C",
+      borderColor: "#f8f9fa",
+    },
     backgroundColor: "#242526",
     borderColor: "#242526",
     textColor: "#E4E6EB",

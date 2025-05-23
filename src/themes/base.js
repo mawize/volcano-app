@@ -48,13 +48,17 @@ const base = () => {
       accordianExpandedColor: "#D2D2D2",
     },
     ToggleButtons: {
-      sliderColor: undefined,
-      sliderBorderColor: "#f8f9fa",
+      Slider: {
+        backgroundColor: undefined,
+        borderColor: "#f8f9fa",
+        Active: {
+          backgroundColor: "gray",
+        }
+      },
       backgroundColor: "#dc3545",
       borderColor: "#dc3545",
       textColor: "#fff",
       Active: {
-        sliderColor: "gray",
         backgroundColor: "#198754",
         borderColor: "#198754",
         textColor: "#fff",

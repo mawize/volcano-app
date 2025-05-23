@@ -37,13 +37,17 @@ const redscale = {
     accordianExpandedColor: "#d32f2f",
   },
   ToggleButtons: {
-    sliderColor: "#B0B3B8",
-    sliderBorderColor: "#f8f9fa",
+    Slider: {
+      backgroundColor: "#B0B3B8",
+      borderColor: "#f8f9fa",
+      Active: {
+        backgroundColor: "#d32f2f",
+      }
+    },
     backgroundColor: "#242526",
     borderColor: "#C0C0C0",
     textColor: "#d32f2f",
-    Active: {      
-      sliderColor: "#d32f2f",
+    Active: {
       backgroundColor: "#d32f2f",
       borderColor: "white",
       textColor: "white",

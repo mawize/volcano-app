@@ -37,13 +37,17 @@ const greenscale = {
     accordianExpandedColor: "#0fca06",
   },
   ToggleButtons: {
-    sliderColor: "#B0B3B8",
-    sliderBorderColor: "#f8f9fa",
+    Slider: {
+      backgroundColor: "#B0B3B8",
+      borderColor: "#f8f9fa",
+      Active: {
+        backgroundColor: "#0fca06",
+      }
+    },
     backgroundColor: "#242526",
     borderColor: "#B0B3B8",
     textColor: "#0fca06",
     Active: {
-      sliderColor: "#0fca06",
       backgroundColor: "#0fca06",
       borderColor: "white",
       textColor: "white",

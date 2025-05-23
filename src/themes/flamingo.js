@@ -39,8 +39,10 @@ const flamingo = {
     accordianExpandedColor: "darkgray",
   },
   ToggleButtons: {
-    sliderColor: "white",
-    sliderBorderColor: "white",
+    Slider: {
+      backgroundColor: "white",
+      borderColor: "white",
+    },
     backgroundColor: "#fccddf",
     borderColor: "#fccddf",
     textColor: "#fff",

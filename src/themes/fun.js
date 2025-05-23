@@ -60,8 +60,10 @@ const pride = {
     accordianExpandedColor: "#2d3237",
   },
   ToggleButtons: {
-    sliderColor: "white",
-    sliderBorderColor: "#f8f9fa",
+    Slider: {
+      backgroundColor: "white",
+      borderColor: "#f8f9fa",
+    },
     backgroundColor: buttonbackgroundColor,
     borderColor: "white",
     textColor: "black",

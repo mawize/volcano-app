@@ -36,8 +36,10 @@ const dark = {
     accordianExpandedColor: "darkgray",
   },
   ToggleButtons: {
-    sliderColor: "lightgray",
-    sliderBorderColor: "#f8f9fa",
+    Slider: {
+      backgroundColor: "lightgray",
+      borderColor: "#f8f9fa",
+    },
     backgroundColor: buttonbackgroundColor,
     borderColor: "darkgray",
     textColor: "#fff",

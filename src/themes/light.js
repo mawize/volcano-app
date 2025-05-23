@@ -43,13 +43,17 @@ const light = {
     rangeBoxBorderColor: "orange",
   },
   ToggleButtons: {
-    sliderColor: buttonbackgroundColor,
-    sliderBorderColor: "#f8f9fa",
+    Slider: {
+      backgroundColor: buttonbackgroundColor,
+      borderColor: "#f8f9fa",
+      Active: {
+        backgroundColor: "#FF6600",
+      }
+    },
     backgroundColor: buttonbackgroundColor,
     borderColor: "black",
     textColor: "black",
     Active: {
-      sliderColor: "#FF6600",
       backgroundColor: "#FF6600",
       borderColor: "black",
       textColor: "#fff",

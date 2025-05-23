@@ -71,7 +71,7 @@ function resolveProperty(theme, path) {
   const parts = path.split('.');
   const last = parts[parts.length - 1];
   const secondToLast = parts[parts.length - 2];
-  const states = ['Active', 'Focus', 'Pressed', 'Hover'];
+  const states = ['Active', 'Slider', 'Focus', 'Pressed', 'Hover'];
   
   let components, state, property;
   
@@ -88,11 +88,30 @@ function resolveProperty(theme, path) {
   const compsReversed = components.slice().reverse();
   
   if (state) {
+    for (let i = 0; i < compsReversed.length - 1; i++) {
+      for (let j = i + 1; j <= compsReversed.length; j++) {
+        const nestedPath = compsReversed.slice(i, j).reverse().join('.');
+        let current = theme;
+        for (const part of nestedPath.split('.')) {
+          if (current[part]) {
+            current = current[part];
+          } else {
+            current = null;
+            break;
+          }
+        }
+        if (current && current[state] && current[state][property] !== undefined) {
+          return current[state][property];
+        }
+      }
+    }
+    
     for (const comp of compsReversed) {
       if (theme[comp] && theme[comp][state] && theme[comp][state][property] !== undefined) {
         return theme[comp][state][property];
       }
     }
+    
     if (theme[state] && theme[state][property] !== undefined) {
       return theme[state][property];
     }
@@ -105,10 +124,10 @@ function resolveProperty(theme, path) {
   }
   
   return theme[property];
-};
+}
 
 export default function GetTheme(type) {
-  const theme = resolveTheme(type)
+  const theme = resolveTheme(type);
   theme.get = (path) => resolveProperty(theme, path);
   return theme;
 }

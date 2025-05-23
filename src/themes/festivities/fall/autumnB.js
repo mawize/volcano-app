@@ -40,14 +40,18 @@ const autumnB = {
     accordianExpandedColor: "#146B3A",
   },
   ToggleButtons: {
-    sliderColor: primaryDark,
-    sliderBorderColor: primaryLight,
+    Slider: {
+      backgroundColor: primaryDark,
+      borderorderColor: primaryLight,
+      Active: {
+        backgroundColor: primaryLight,
+        borderColor: "#FFF",
+      }
+    },
     backgroundColor: primaryDark,
     borderColor: primaryLight,
     textColor: primaryLight,
     Active: {
-      sliderColor: primaryLight,
-      sliderBorderColor: "#FFF",
       backgroundColor: primaryLight,
       borderColor: primaryLight,
       textColor: primaryDark,
