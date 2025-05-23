@@ -14,8 +14,9 @@ const autumnB = {
       backgroundColor: primaryLight,
     }
   },
-  currentTemperatureColor: primaryLight,
-  targetTemperatureColor: primaryDark,
+  TargetTemperatureDisplay: {
+    textColor: primaryDark,
+  },
   textColor: primaryLight,
   PlusMinusButton: {
     backgroundColor: primaryDark,

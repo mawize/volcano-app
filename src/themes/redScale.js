@@ -11,7 +11,9 @@ const redscale = {
       borderColor: "white",
     }
   },
-  currentTemperatureColor: "#d32f2f",
+  CurrentTemperatureDisplay: {
+    textColor: "#d32f2f"
+  },
   borderColor: "#C0C0C0",
   backgroundColor: "black",
   textColor: "#f44336", // Brighter red for better visibility

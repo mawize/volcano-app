@@ -5,7 +5,7 @@ import PrideText from "../../../themes/PrideText";
 const Div = styled.div`
   text-align: center;
   font-size: 30px;
-  color: ${(props) => props.theme.currentTemperatureColor};
+  color: ${(props) => props.theme.get("TemperatureDisplay.CurrentTemperatureDisplay.textColor")};
   font-family: "digital-mono";
   font-size: 4rem;
   margin-bottom: -1.75rem;
@@ -19,7 +19,7 @@ const Span = styled.span`
 const StyledSpinner = styled(Spinner)`
   text-align: center;
   font-size: 18px;
-  color: ${(props) => props.theme.currentTemperatureColor} !important;
+  color: ${(props) => props.theme.get("TemperatureDisplay.CurrentTemperatureDisplay.textColor")} !important;
 `;
 
 const CurrentTemperature = (props) => {

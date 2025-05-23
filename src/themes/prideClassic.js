@@ -14,8 +14,9 @@ const pride = {
     }
   },
   borderColor: "#D2D2D2",
-  currentTemperatureColor: "#ed75b3",
-  targetTemperatureColor: "#ed75b3",
+  TemperatureDisplay: {
+    textColor: "#ed75b3",
+  },
   textColor: "white",
   PlusMinusButton: {
     backgroundColor: buttonbackgroundColor,

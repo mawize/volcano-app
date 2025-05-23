@@ -14,8 +14,9 @@ const valentinesDay = {
     }
   },
   borderColor: "#ea379d",
-  currentTemperatureColor: "#ed75b3",
-  targetTemperatureColor: "#ed75b3",
+  TemperatureDisplay: {
+    textColor: "#ed75b3",
+  },
   textColor: "white",
   PlusMinusButton: {
     backgroundColor: "#7D1641",

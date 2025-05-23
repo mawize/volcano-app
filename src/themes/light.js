@@ -15,8 +15,12 @@ const light = {
       borderColor: "white",
     }
   },
-  currentTemperatureColor: "#FF6600",
-  targetTemperatureColor: "black",
+  CurrentTemperatureDisplay: {
+    textColor: "#FF6600"
+  },
+  TargetTemperatureDisplay: {
+    textColor: "black"
+  },
   backgroundColor: "white",
   textColor: "black",
   iconColor: "#FF6600",

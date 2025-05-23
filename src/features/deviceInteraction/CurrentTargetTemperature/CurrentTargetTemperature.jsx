@@ -6,7 +6,7 @@ import PrideText from "../../../themes/PrideText";
 const Div = styled.div`
   text-align: center;
   font-size: 30px;
-  color: ${(props) => props.theme.targetTemperatureColor};
+  color: ${(props) => props.theme.get("TemperatureDisplay.TargetTemperatureDisplay.textColor")};
   font-family: "digital-mono";
   font-size: 4rem;
 `;
@@ -19,7 +19,7 @@ const Span = styled.span`
 const StyledSpinner = styled(Spinner)`
   text-align: center;
   font-size: 18px;
-  color: ${(props) => props.theme.targetTemperatureColor} !important;
+  color: ${(props) => props.theme.get("TemperatureDisplay.TargetTemperatureDisplay.textColor")} !important;
 `;
 
 const CurrentTargetTemperature = (props) => {

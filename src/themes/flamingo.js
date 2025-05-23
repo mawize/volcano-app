@@ -13,8 +13,9 @@ const flamingo = {
       borderColor: "darkgray",
     }
   },
-  currentTemperatureColor: "antiquewhite",
-  targetTemperatureColor: "antiquewhite",
+  TemperatureDisplay: {
+    textColor: "antiquewhite",
+  },
   backgroundColor: "black",
   textColor: "white",
   iconColor: "#e8d6ed",

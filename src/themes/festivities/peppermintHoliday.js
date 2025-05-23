@@ -12,8 +12,12 @@ const christmas = {
     }
   },
   borderColor: "white",
-  currentTemperatureColor: "#9E1F15",
-  targetTemperatureColor: "#3C8123",
+  CurrentTemperatureDisplay: {
+    textColor: "#9E1F15",
+  },
+  TargetTemperatureDisplay: { 
+    textColor: "#3C8123",
+  },
   textColor: "white",
   PlusMinusButton: {
     borderColor: "white",

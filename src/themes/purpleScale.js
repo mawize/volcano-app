@@ -11,7 +11,9 @@ const purplescale = {
       borderColor: "white",
     }
   },
-  currentTemperatureColor: "#8e24aa", // A vibrant purple
+  CurrentTemperatureDisplay: {
+    textColor: "#8e24aa", // A vibrant purple
+  },
   borderColor: "#C0C0C0",
   backgroundColor: "black",
   textColor: "#9c27b0", // Slightly lighter purple for visibility

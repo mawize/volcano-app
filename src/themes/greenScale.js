@@ -11,7 +11,9 @@ const greenscale = {
       borderColor: "white",
     }
   },
-  currentTemperatureColor: "#0fca06",
+  CurrentTemperatureDisplay: { 
+    textColor: "#0fca06" 
+  },
   borderColor: "#B0B3B8",
   backgroundColor: "black",
   textColor: "#0fca06",

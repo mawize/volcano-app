@@ -13,8 +13,12 @@ const volcanicAsh = {
       borderColor: "white",
     },
   },
-  currentTemperatureColor: "#FF6600",
-  targetTemperatureColor: "white",
+  CurrentTemperatureDisplay: {
+    textColor: "#FF6600"
+  },
+  TargetTemperatureDisplay: {
+    textColor: "white"
+  },
   backgroundColor: "black",
   textColor: "white",
   iconColor: "#FF6600",

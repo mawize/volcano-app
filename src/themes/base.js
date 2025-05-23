@@ -17,8 +17,9 @@ const base = () => {
         borderColor: "antiquewhite",
       }
     },
-    currentTemperatureColor: "antiquewhite",
-    targetTemperatureColor: "antiquewhite",
+    TemperatureDisplay: { 
+      textColor: "antiquewhite",
+    },
     backgroundColor: "black",
     textColor: "antiquewhite",
     iconColor: "rebeccapurple",

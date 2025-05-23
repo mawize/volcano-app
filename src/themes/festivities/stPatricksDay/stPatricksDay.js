@@ -12,8 +12,9 @@ const feastOfSaintPatrick = {
     }
   },
   borderColor: "#FF7900",
-  currentTemperatureColor: "#FF7900",
-  targetTemperatureColor: "white",
+  CurrentTemperatureDisplay: {
+    textColor: "#FF7900",
+  },
   textColor: "white",
   PlusMinusButton: {
     borderColor: "#FF7900",
