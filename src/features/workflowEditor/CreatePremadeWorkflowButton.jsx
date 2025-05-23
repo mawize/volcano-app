@@ -5,7 +5,7 @@ import PrideText from "../../themes/PrideText";
 
 const StyledDropdownButton = styled(Dropdown.Toggle)`
   background-color: ${(props) => props.theme.buttonColorMain};
-  color: ${(props) => props.theme.primaryFontColor};
+  color: ${(props) => props.theme.textColor};
   border-radius: 5px;
   border-color: ${(props) => props.theme.borderColor};
   min-height: 50px;
@@ -27,7 +27,7 @@ const StyledDropdownButton = styled(Dropdown.Toggle)`
 
 const StyledDropDownMenuItem = styled(Dropdown.Item)`
   background-color: ${(props) => props.theme.buttonColorMain};
-  color: ${(props) => props.theme.primaryFontColor};
+  color: ${(props) => props.theme.textColor};
   border-radius: 5px;
   border-color: ${(props) => props.theme.borderColor};
   border-style: ${(props) => props.theme.borderStyle};
@@ -48,7 +48,7 @@ const StyledDropDownMenuItem = styled(Dropdown.Item)`
 
 const StyledDropDownMenu = styled(Dropdown.Menu)`
   background-color: ${(props) => props.theme.buttonColorMain};
-  color: ${(props) => props.theme.primaryFontColor};
+  color: ${(props) => props.theme.textColor};
   border-radius: 5px;
   border-color: ${(props) => props.theme.borderColor};
   border-style: ${(props) => props.theme.borderStyle};
@@ -56,7 +56,7 @@ const StyledDropDownMenu = styled(Dropdown.Menu)`
 `;
 
 const StyledDropdownDivider = styled(Dropdown.Divider)`
-  background-color: ${(props) => props.theme.primaryFontColor};
+  background-color: ${(props) => props.theme.textColor};
 `;
 
 export default function CreatePremadeWorkflowButton(props) {

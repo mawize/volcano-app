@@ -14,7 +14,7 @@ const volcanicAsh = {
     borderColor: "white",
   },
   backgroundColor: "black",
-  primaryFontColor: "white",
+  textColor: "white",
   iconColor: "#FF6600",
   iconTextColor: "white",
   plusMinusButtons: {

@@ -10,7 +10,7 @@ const grayscale = {
     borderColor: "black",
   },
   backgroundColor: "#18191A",
-  primaryFontColor: "#E4E6EB",
+  textColor: "#E4E6EB",
   iconColor: "#3A3B3C",
   iconTextColor: "#E4E6EB",
   temperatureRange: {

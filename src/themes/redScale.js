@@ -12,7 +12,7 @@ const redscale = {
     borderColor: "white",
   },
   backgroundColor: "black",
-  primaryFontColor: "#f44336", // Brighter red for better visibility
+  textColor: "#f44336", // Brighter red for better visibility
   iconColor: "#f44336", // Updated to match primary font color
   iconTextColor: "#f44336", // Consistent with other icon colors
   temperatureRange: {

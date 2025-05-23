@@ -7,7 +7,7 @@ const christmas = {
   borderColor: "#BB2528",
   currentTemperatureColor: "#BB2528",
   targetTemperatureColor: "#146B3A",
-  primaryFontColor: "white",
+  textColor: "white",
   plusMinusButtons: {
     borderColor: "#BB2528",
     backgroundColor: "#146B3A",

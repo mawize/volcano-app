@@ -12,7 +12,7 @@ const base = () => {
       borderColor: "antiquewhite",
     },
     backgroundColor: "black",
-    primaryFontColor: "antiquewhite",
+    textColor: "antiquewhite",
     iconColor: "rebeccapurple",
     iconTextColor: "rebeccapurple",
     plusMinusButtons: {

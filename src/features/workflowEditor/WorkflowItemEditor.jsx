@@ -25,7 +25,7 @@ import { useEffect } from "react";
 import Drag from "./DND/WorkflowItemDrag";
 import WorkflowItemDrop from "./DND/WorkflowItemDrop";
 const StyledSelect = styled(Select)`
-  color: ${(props) => props.theme.primaryFontColor};
+  color: ${(props) => props.theme.textColor};
   background-color: ${(props) => props.theme.backgroundColor};
   border-color: ${(props) => props.theme.borderColor};
 `;

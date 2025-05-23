@@ -9,7 +9,7 @@ const pride = {
   borderColor: "#D2D2D2",
   currentTemperatureColor: "#ed75b3",
   targetTemperatureColor: "#ed75b3",
-  primaryFontColor: "white",
+  textColor: "white",
   plusMinusButtons: {
     backgroundColor: buttonBackgroundColor,
     borderColor: "#D2D2D2",

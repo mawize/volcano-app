@@ -12,7 +12,7 @@ const purplescale = {
     borderColor: "white",
   },
   backgroundColor: "black",
-  primaryFontColor: "#9c27b0", // Slightly lighter purple for visibility
+  textColor: "#9c27b0", // Slightly lighter purple for visibility
   iconColor: "#9c27b0",
   iconTextColor: "#9c27b0",
   temperatureRange: {

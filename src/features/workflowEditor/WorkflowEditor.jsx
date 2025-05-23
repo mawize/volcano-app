@@ -26,7 +26,7 @@ const WorkflowDiv = styled.div``;
 const StyledAccordionHeader = styled(Accordion.Header)`
   .accordion-button {
     background-color: ${(props) => props.theme.backgroundColor};
-    color: ${(props) => props.theme.primaryFontColor};
+    color: ${(props) => props.theme.textColor};
   }
   .accordion-button:not(.collapsed) {
     color: ${(props) => props.theme.buttonActive.color};
@@ -63,7 +63,7 @@ const WorkflowButtonsDiv = styled.div`
 
 const AccordionItemWrapper = styled(Accordion.Item)`
   border-color: ${(props) => props.theme.borderColor};
-  color: ${(props) => props.theme.primaryFontColor};
+  color: ${(props) => props.theme.textColor};
 `;
 
 export default function WorkflowEditor() {

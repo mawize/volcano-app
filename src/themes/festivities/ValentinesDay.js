@@ -9,7 +9,7 @@ const valentinesDay = {
   borderColor: "#ea379d",
   currentTemperatureColor: "#ed75b3",
   targetTemperatureColor: "#ed75b3",
-  primaryFontColor: "white",
+  textColor: "white",
   plusMinusButtons: {
     backgroundColor: "#7D1641",
     color: "#ed75b3",

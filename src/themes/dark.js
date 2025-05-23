@@ -15,7 +15,7 @@ const dark = {
     borderColor: "darkgray",
   },
   backgroundColor: "black",
-  primaryFontColor: "antiquewhite",
+  textColor: "antiquewhite",
   iconColor: "darkviolet",
   temperatureRange: {
     lowTemperatureColor: "#f53803",

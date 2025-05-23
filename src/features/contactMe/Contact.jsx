@@ -7,7 +7,7 @@ import ModalWrapper from "../shared/styledComponents/Modal";
 const StyleContactInfo = styled.input`
   height: 30px;
   background: ${(props) => props.theme.backgroundColor};
-  color: ${(props) => props.theme.primaryFontColor};
+  color: ${(props) => props.theme.textColor};
   border-color: ${(props) => props.theme.borderColor};
   margin-left: 1px;
   width: 90vw;
@@ -20,7 +20,7 @@ const StyledTextArea = styled.textarea`
   height: 25vh;
   min-height: 100px;
   background: ${(props) => props.theme.backgroundColor};
-  color: ${(props) => props.theme.primaryFontColor};
+  color: ${(props) => props.theme.textColor};
   border-color: ${(props) => props.theme.borderColor};
   margin-left: 1px;
   width: 90vw;

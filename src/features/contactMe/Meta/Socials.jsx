@@ -16,7 +16,7 @@ const Div = styled.div`
 const StyledA = styled.a`
   max-width: min-content;
   text-decoration: none;
-  color: ${(props) => props.theme.primaryFontColor};
+  color: ${(props) => props.theme.textColor};
 `;
 
 const SocialDiv = styled.div`

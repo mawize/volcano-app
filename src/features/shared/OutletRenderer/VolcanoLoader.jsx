@@ -244,7 +244,7 @@ export default function VolcanoLoader(props) {
               aria-controls="basic-navbar-nav"
             >
               <div
-                style={{ color: theme.primaryFontColor }}
+                style={{ color: theme.textColor }}
                 onClick={navBarToggleOnClick}
               >
                 <MenuBarIcon />

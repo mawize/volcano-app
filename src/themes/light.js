@@ -16,7 +16,7 @@ const light = {
     borderColor: "white",
   },
   backgroundColor: "white",
-  primaryFontColor: "black",
+  textColor: "black",
   iconColor: "#FF6600",
   iconTextColor: "black",
   plusMinusButtons: {

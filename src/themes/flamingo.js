@@ -14,7 +14,7 @@ const flamingo = {
     borderColor: "darkgray",
   },
   backgroundColor: "black",
-  primaryFontColor: "white",
+  textColor: "white",
   iconColor: "#e8d6ed",
   iconTextColor: "#e8d6ed",
   plusMinusButtons: {

@@ -20,7 +20,7 @@ import Snowfall from "./features/shared/Snowfall";
 import { isMobile } from "./constants/constants";
 import DragPreview from "./features/workflowEditor/DND/DragPreview";
 const Div = styled.div`
-  color: ${(props) => props.theme.primaryFontColor};
+  color: ${(props) => props.theme.textColor};
   background-color: ${(props) => props.theme.backgroundColor};
   width: 100vw;
   height: 100vh;

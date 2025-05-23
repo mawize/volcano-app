@@ -12,7 +12,7 @@ const greenscale = {
     borderColor: "white",
   },
   backgroundColor: "black",
-  primaryFontColor: "#0fca06",
+  textColor: "#0fca06",
   iconColor: "#0fca06",
   iconTextColor: "#0fca06",
   temperatureRange: {
