@@ -3,7 +3,13 @@ const base = () => {
     author: "ImACoderImACoderImACoder",
     borderStyle: "solid",
     borderColor: "darkgray",
+    SettingsButton: {
+      borderRadius: "5px",
+      borderWidth: "2px",
+    },
     Button: { 
+      borderRadius: "2rem",
+      borderWidth: "0px", // 0.15rem
       backgroundColor: "black",
       Active: {
         textColor: "white",

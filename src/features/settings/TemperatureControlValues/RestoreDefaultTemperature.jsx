@@ -29,7 +29,7 @@ export default function RestoreDefaultTemperature() {
   };
   return (
     <>
-      <Button onClick={handleShow}>Restore Defaults</Button>
+      <Button hierarchy="Button.SettingsButton" onClick={handleShow}>Restore Defaults</Button>
       <ModalWrapper
         headerText="Restore Default Temperatures"
         bodyText="Are you sure you want to restore defaults? This action cannot be undone"

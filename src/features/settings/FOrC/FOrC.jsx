@@ -4,7 +4,7 @@ import PrideText from "../../../themes/PrideText";
 export default function FOrC(props) {
   return (
     <Div>
-      <Button onClick={props.onClick}>
+      <Button hierarchy="Button.SettingsButton" onClick={props.onClick}>
         <PrideText text={`Change To: ${props.temperatureScaleAbbreviation}`}/>
       </Button>
     </Div>

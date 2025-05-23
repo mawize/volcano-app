@@ -5,8 +5,6 @@ export const InactiveButton = styled(Button)`
   font-size: 1.25rem;
   min-height: 2.75rem;
   flex-grow: 1;
-  border-width: 0.15rem;
-  border-radius: 2rem;
 `;
 
 export const ActiveButton = styled(InactiveButton)`

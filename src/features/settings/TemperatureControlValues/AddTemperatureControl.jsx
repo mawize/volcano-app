@@ -76,7 +76,7 @@ export default function AddTemperatureControl() {
         />
         <Form.Text>{inputHelperText}</Form.Text>
       </Form.Group>
-      <Button type="submit">Submit</Button> <RestoreDefaultTemperature />
+      <Button hierarchy="Button.SettingsButton" type="submit">Submit</Button> <RestoreDefaultTemperature />
     </Form>
   );
 }
