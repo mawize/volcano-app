@@ -90,14 +90,14 @@ const SwitchOffState = styled(SwitchOnState)`
 
 const OnSwitchWithBackgroundImage = styled(SwitchOnState)`
   background: none;
-  background-image: ${(props) => props.theme.ToggleButton.backgroundImageOn};
-  background-blend-mode: ${(props) => props.theme.ToggleButton.backgroundBlendModeOn};
+  background-image: ${(props) => props.theme.get("Button.ToggleButton.Active.backgroundImage")};
+  background-blend-mode: ${(props) => props.theme.get("Button.ToggleButton.Active.backgroundBlendMode")};
 `;
 
 const OffSwitchWithBackgroundImage = styled(SwitchOffState)`
   background: none;
-  background-image: ${(props) => props.theme.ToggleButton.backgroundImageOff};
-  background-blend-mode: ${(props) => props.theme.ToggleButton.backgroundBlendModeOff};
+  background-image: ${(props) => props.theme.get("Button.ToggleButton.backgroundImage")};
+  background-blend-mode: ${(props) => props.theme.get("Button.ToggleButton.backgroundBlendMode")};
 `;
 
 const SwitchHandleOn = styled(SwitchOnState)`
@@ -140,11 +140,11 @@ const ToggleSwitch = React.forwardRef((props, ref) => {
 
   const currentTheme = GetTheme(themeId);
 
-  const OnButton = currentTheme.ToggleButton.backgroundImageOn
+  const OnButton = currentTheme.get("Button.ToggleButton.Active.backgroundImage")
     ? OnSwitchWithBackgroundImage
     : SwitchOnState;
 
-  const OffButton = currentTheme.ToggleButton.backgroundImageOff
+  const OffButton = currentTheme.get("Button.ToggleButton.backgroundImage")
     ? OffSwitchWithBackgroundImage
     : SwitchOffState;
   return (

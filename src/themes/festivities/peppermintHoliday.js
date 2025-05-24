@@ -65,15 +65,15 @@ const christmas = {
     backgroundColor: "#BB2528",
     borderColor: "#3C8123",
     textColor: "#9E1F15",
+    backgroundImage:  ` repeating-linear-gradient(    45deg,    transparent,    transparent 10px,    #3C8123 10px,    #3C8123 20px  ),  /* on "bottom" */  linear-gradient(    to bottom,    #eee,    #999  )`,
+    backgroundBlendMode: "multiply",
     Active: {
       backgroundColor: "#3C8123",
       borderColor: "#BB2528",
       textColor: "#3C8123",
-    },
-    backgroundImageOff: ` repeating-linear-gradient(    45deg,    transparent,    transparent 10px,    #3C8123 10px,    #3C8123 20px  ),  /* on "bottom" */  linear-gradient(    to bottom,    #eee,    #999  )`,
-    backgroundImageOn: ` repeating-linear-gradient(    315deg,    transparent,    transparent 10px,    #E0302E 10px,    #E0302E 20px  ),  /* on "bottom" */  linear-gradient(    to bottom,    #eee,    #999  )`,
-    backgroundBlendModeOff: "multiply",
-    backgroundBlendModeOn: "multiply",
+      backgroundImage: ` repeating-linear-gradient(    315deg,    transparent,    transparent 10px,    #E0302E 10px,    #E0302E 20px  ),  /* on "bottom" */  linear-gradient(    to bottom,    #eee,    #999  )`,
+      backgroundBlendMode: "multiply",
+    }
   },
 };
 

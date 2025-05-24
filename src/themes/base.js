@@ -52,6 +52,8 @@ const base = () => {
       backgroundColor: "#dc3545",
       borderColor: "#dc3545",
       textColor: "#fff",
+      backgroundImage: undefined,
+      backgroundBlendMode: "unset",
       Slider: {
         backgroundColor: undefined,
         borderColor: "#f8f9fa",
@@ -63,12 +65,10 @@ const base = () => {
         backgroundColor: "#198754",
         borderColor: "#198754",
         textColor: "#fff",
-      },
-      backgroundImageOn: undefined,
-      backgroundBlendModeOn: "unset",
-      backgroundImageOff: undefined,
-      backgroundBlendModeOff: "unset"
-    },
+        backgroundImage: undefined,
+        backgroundBlendMode: "unset",
+      }
+    }
   };
 };
 
