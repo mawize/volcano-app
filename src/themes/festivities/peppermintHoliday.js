@@ -33,7 +33,7 @@ const christmas = {
     textColor: "white", 
     borderColor: "#3C8123",
   },
-  temperatureRange: {
+  TemperatureRange: {
     background: `linear-gradient(
         -90deg,
         rgba(255, 255, 255, 1) 0%,
@@ -46,10 +46,12 @@ const christmas = {
         rgba(224, 48, 46, 1) 80%,
         rgba(255, 255, 255, 1) 90%,
         rgba(60, 129, 35, 1) 100%`,
-    rangeBoxColor: "#9E1F15",
-    rangeBoxBorderColor: "white",
-    rangeBoxBorderRadius: "2rem",
-    rangeBoxBorderWidth: "4px",
+    Slider: {      
+      backgroundColor: "#9E1F15",
+      borderColor: "white",
+      borderRadius: "2rem",
+      borderWidth: "4px",
+    }
   },
   workflowEditor: {
     accordianExpandedColor: "#146B3A",

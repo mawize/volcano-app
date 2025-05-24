@@ -35,15 +35,17 @@ const base = () => {
       textColor: "inherit",
       borderColor: "inherit",
     },
-    temperatureRange: {
+    TemperatureRange: {
       lowTemperatureColor: "#f53803",
       highTemperatureColor: "#f5d020",
       background: "linear-gradient(315deg, #f53803 0%, #f5d020 74%)",
-      rangeBoxColor: "black",
-      rangeBoxBorderColor: "orange",
-      rangeBackground: undefined,
-      rangeBoxBorderRadius: "0.25rem",
-      rangeBoxBorderWidth: "3px",
+      Slider: {
+        background: undefined,
+        backgroundColor: "black",
+        borderColor: "orange",
+        borderRadius: "0.25rem",
+        borderWidth: "3px",
+      }
     },
     workflowEditor: {
       accordianExpandedColor: "#D2D2D2",

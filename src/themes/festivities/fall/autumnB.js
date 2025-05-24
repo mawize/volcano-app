@@ -31,11 +31,12 @@ const autumnB = {
     textColor: primaryLight, 
     borderColor: primaryColor,
   },
-  temperatureRange: {
+  TemperatureRange: {
     background: `linear-gradient(90deg, rgba(211,84,0,1) 20%, rgba(229,152,102,1) 57%, rgba(255,102,0,1) 87%, rgba(160,64,0,1) 100%)`,
-
-    rangeBackground: `linear-gradient(45deg, #D35400, #E59866, #A04000)`,
-    rangeBoxBorderColor: primaryLight,
+    Slider: {
+      background: `linear-gradient(45deg, #D35400, #E59866, #A04000)`,
+      borderColor: primaryLight,
+    }
   },
   workflowEditor: {
     accordianExpandedColor: "#146B3A",

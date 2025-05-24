@@ -31,10 +31,12 @@ const valentinesDay = {
     textColor: "#ed75b3", 
     borderColor: "#671168",
   },
-  temperatureRange: {
+  TemperatureRange: {
     background: "linear-gradient(315deg, red 0%, #ff5d7a 74%)",
-    rangeBoxColor: "#ea379d",
-    rangeBoxBorderColor: "white",
+    Slider: {
+      backgroundColor: "#ea379d",
+      borderColor: "white",
+    }
   },
   workflowEditor: {
     accordianExpandedColor: "#ea379d",

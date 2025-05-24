@@ -81,7 +81,7 @@ export default function TargetTemperatureRange() {
               height: "6px",
               maxWidth: "80vw",
               backgroundColor: "#f53803",
-              background: `${theme.temperatureRange.background}`,
+              background: `${theme.get("Button.TemperatureRange.background")}`,
             }}
           >
             {children}
@@ -100,14 +100,14 @@ export default function TargetTemperatureRange() {
               ...props.style,
               height: "42px",
               width: "42px",
-              backgroundColor: theme.temperatureRange.rangeBoxColor,
-              borderColor: theme.temperatureRange.rangeBoxBorderColor,
+              backgroundColor: theme.get("Button.TemperatureRange.Slider.backgroundColor"),
+              borderColor: theme.get("Button.TemperatureRange.Slider.borderColor"),
               borderStyle: "solid",
-              borderWidth: theme.temperatureRange.rangeBoxBorderWidth,
-              borderRadius: theme.temperatureRange.rangeBoxBorderRadius,
+              borderWidth: theme.get("Button.TemperatureRange.Slider.borderWidth"),
+              borderRadius: theme.get("Button.TemperatureRange.Slider.borderRadius"),
               background:
-                theme.temperatureRange.rangeBackground ||
-                theme.temperatureRange.rangeBoxColor,
+                theme.get("Button.TemperatureRange.Slider.background")||
+                theme.get("Button.TemperatureRange.Slider.backgroundColor"),
             }}
           />
         )}

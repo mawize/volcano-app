@@ -32,7 +32,7 @@ const pride = {
     textColor: "#ed75b3",
     borderColor: "darkviolet",
   },
-  temperatureRange: {
+  TemperatureRange: {
     lowTemperatureColor: "red",
     highTemperatureColor: "#ff5d7a",
     background: `linear-gradient(
@@ -47,15 +47,17 @@ const pride = {
         rgba(95, 21, 242, 1) 80%,
         rgba(186, 12, 248, 1) 90%,
         rgba(251, 7, 217, 1) 100%`,
-    rangeBoxColor: "#ea379d",
-    rangeBoxBorderColor: "white",
-    rangeBackground: `linear-gradient(
-      90deg,
-      rgb(85, 205, 252) 0%, rgb(85, 205, 252) 20%,
-      rgb(247, 168, 184) 20%, rgb(247, 168, 184) 40%,
-      rgb(255, 255, 255) 40%, rgb(255, 255, 255) 60%,
-      rgb(247, 168, 184) 60%, rgb(247, 168, 184) 80%,
-      rgb(85, 205, 252) 80%, rgb(85, 205, 252) 100%)`,
+    Slider: {
+      background: `linear-gradient(
+        90deg,
+        rgb(85, 205, 252) 0%, rgb(85, 205, 252) 20%,
+        rgb(247, 168, 184) 20%, rgb(247, 168, 184) 40%,
+        rgb(255, 255, 255) 40%, rgb(255, 255, 255) 60%,
+        rgb(247, 168, 184) 60%, rgb(247, 168, 184) 80%,
+        rgb(85, 205, 252) 80%, rgb(85, 205, 252) 100%)`,
+      backgroundColor: "#ea379d",
+      borderColor: "white",
+    }
   },
   workflowEditor: {
     accordianExpandedColor: "#2d3237",

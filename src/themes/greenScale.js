@@ -25,10 +25,12 @@ const greenscale = {
     textColor: "#0fca06", 
     borderColor: "#0fca06",
   },
-  temperatureRange: {
+  TemperatureRange: {
     background: "linear-gradient(315deg,  #0fca06 0%, #B0B3B8 74%)",
-    rangeBoxColor: "#0fca06",
-    rangeBoxBorderColor: "white",
+    Slider: {
+      backgroundColor: "#0fca06",
+      borderColor: "white"
+    }
   },
   PlusMinusButton: {
     backgroundColor: "#242526",

@@ -25,10 +25,12 @@ const purplescale = {
     textColor: "#9c27b0", 
     borderColor: "#9c27b0"
   },
-  temperatureRange: {
+  TemperatureRange: {
     background: "linear-gradient(315deg, #8e24aa 0%, #ba68c8 74%)", // Gradient from vibrant to light purple
-    rangeBoxColor: "#8e24aa",
-    rangeBoxBorderColor: "#C0C0C0",
+    Slider: {
+      backgroundColor: "#8e24aa",
+      borderColor: "#C0C0C0",
+    }
   },
   PlusMinusButton: {
     backgroundColor: "#242526",

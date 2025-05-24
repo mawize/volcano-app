@@ -25,10 +25,12 @@ const redscale = {
     textColor: "#f44336", // Consistent with other icon colors 
     borderColor: "#f44336"
   },
-  temperatureRange: {
+  TemperatureRange: {
     background: "linear-gradient(315deg, #d32f2f 0%, #e57373 74%)", // Updated gradient for smoother transition
-    rangeBoxColor: "#d32f2f",
-    rangeBoxBorderColor: "#C0C0C0",
+    Slider: {
+      backgroundColor: "#d32f2f",
+      borderColor: "#C0C0C0",
+    }
   },
   PlusMinusButton: {
     backgroundColor: "#242526",

@@ -30,11 +30,12 @@ const feastOfSaintPatrick = {
     textColor: "white", 
     borderColor: "#D9DF1D",
   },
-  temperatureRange: {
-    background:
-      "linear-gradient(90deg,#009A49 33.33%, #FFF 0, #FFF 66.66%, #FF7900 0)",
-    rangeBoxColor: `linear-gradient(to right, #009A49 33.33%, #fff 0, #fff 66.66%, #FF7900 0)`,
-    rangeBoxBorderColor: "#D9DF1D",
+  TemperatureRange: {
+    background: "linear-gradient(90deg,#009A49 33.33%, #FFF 0, #FFF 66.66%, #FF7900 0)",
+    Slider: {
+      backgroundColor: `linear-gradient(to right, #009A49 33.33%, #fff 0, #fff 66.66%, #FF7900 0)`,
+      borderColor: "#D9DF1D",
+    }
   },
   workflowEditor: {
     accordianExpandedColor: "#146B3A",
