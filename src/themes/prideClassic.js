@@ -33,8 +33,6 @@ const pride = {
     borderColor: "darkviolet",
   },
   TemperatureRange: {
-    lowTemperatureColor: "red",
-    highTemperatureColor: "#ff5d7a",
     background: `linear-gradient(
         -90deg,
         rgba(255, 0, 0, 1) 0%,

@@ -38,8 +38,6 @@ const volcanicAsh = {
     accordianExpandedColor: "#FF6600",
   },
   TemperatureRange: {
-    lowTemperatureColor: "#f53803",
-    highTemperatureColor: "#f5d020",
     background: "linear-gradient(90deg, rgba(87,12,160,1) 18%, rgba(50,205,50,1) 50%, rgba(255,102,0,1) 80%)",
     Slider: {
       background: "black",

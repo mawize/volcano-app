@@ -40,8 +40,6 @@ const light = {
     accordianExpandedColor: "#FF6600",
   },
   TemperatureRange: {
-    lowTemperatureColor: "#f53803",
-    highTemperatureColor: "#f5d020",
     background: "linear-gradient(315deg, #f53803 0%, #f5d020 74%)",
     Slider: {
       background: "black",
