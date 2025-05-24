@@ -28,7 +28,7 @@ const purplescale = {
   TemperatureRange: {
     background: "linear-gradient(315deg, #8e24aa 0%, #ba68c8 74%)", // Gradient from vibrant to light purple
     Slider: {
-      backgroundColor: "#8e24aa",
+      background: "#8e24aa",
       borderColor: "#C0C0C0",
     }
   },

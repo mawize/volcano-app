@@ -28,7 +28,7 @@ const redscale = {
   TemperatureRange: {
     background: "linear-gradient(315deg, #d32f2f 0%, #e57373 74%)", // Updated gradient for smoother transition
     Slider: {
-      backgroundColor: "#d32f2f",
+      background: "#d32f2f",
       borderColor: "#C0C0C0",
     }
   },

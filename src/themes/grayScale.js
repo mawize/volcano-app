@@ -24,7 +24,7 @@ const grayscale = {
   TemperatureRange: {
     background: "linear-gradient(315deg, #B0B3B8 0%, #242526 74%)",
     Slider: {
-      backgroundColor: "#242526",
+      background: "#242526",
       borderColor: "#B0B3B8",
     }
   },

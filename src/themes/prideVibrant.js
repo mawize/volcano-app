@@ -55,7 +55,6 @@ const pride = {
         rgb(255, 255, 255) 40%, rgb(255, 255, 255) 60%,
         rgb(247, 168, 184) 60%, rgb(247, 168, 184) 80%,
         rgb(85, 205, 252) 80%, rgb(85, 205, 252) 100%)`,
-      backgroundColor: "#ea379d",
       borderColor: "white",
     }
   },

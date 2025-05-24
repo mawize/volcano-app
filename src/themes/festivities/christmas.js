@@ -47,7 +47,7 @@ const christmas = {
         rgba(255, 255, 255, 1) 90%,
         rgba(20, 107, 58, 1) 100%`,
     Slider: {
-      backgroundColor: "#146B3A",
+      background: "#146B3A",
       borderColor: "#BB2528",
     }
   },

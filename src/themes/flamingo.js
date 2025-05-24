@@ -34,7 +34,7 @@ const flamingo = {
   TemperatureRange: {
     background: "linear-gradient(315deg, #e79fec 0%, #fccddf 74%)",
     Slider: {
-      backgroundColor: "white",
+      background: "white",
       borderColor: "#fccddf"
     },
   },

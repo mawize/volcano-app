@@ -44,7 +44,7 @@ const light = {
     highTemperatureColor: "#f5d020",
     background: "linear-gradient(315deg, #f53803 0%, #f5d020 74%)",
     Slider: {
-      backgroundColor: "black",
+      background: "black",
       borderColor: "orange",
     }
   },

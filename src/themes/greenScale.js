@@ -28,7 +28,7 @@ const greenscale = {
   TemperatureRange: {
     background: "linear-gradient(315deg,  #0fca06 0%, #B0B3B8 74%)",
     Slider: {
-      backgroundColor: "#0fca06",
+      background: "#0fca06",
       borderColor: "white"
     }
   },

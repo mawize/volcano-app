@@ -46,14 +46,11 @@ export default function SettingsRange({
             ...props.style,
             height: "42px",
             width: "42px",
-            backgroundColor: theme.get("Button.TemperatureRange.Slider.backgroundColor"),
             borderColor: theme.get("Button.TemperatureRange.Slider.borderColor"),
             borderStyle: "solid",
             borderWidth: theme.get("Button.TemperatureRange.Slider.borderWidth"),
             borderRadius: theme.get("Button.TemperatureRange.Slider.borderRadius"),
-            background:
-              theme.get("Button.TemperatureRange.Slider.background") ||
-              theme.get("Button.TemperatureRange.Slider.backgroundColor"),
+            background: theme.get("Button.TemperatureRange.Slider.background"),
           }}
         />
       )}

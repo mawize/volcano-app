@@ -34,7 +34,7 @@ const valentinesDay = {
   TemperatureRange: {
     background: "linear-gradient(315deg, red 0%, #ff5d7a 74%)",
     Slider: {
-      backgroundColor: "#ea379d",
+      background: "#ea379d",
       borderColor: "white",
     }
   },
