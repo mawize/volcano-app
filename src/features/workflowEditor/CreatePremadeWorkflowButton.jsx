@@ -4,54 +4,54 @@ import styled from "styled-components";
 import PrideText from "../../themes/PrideText";
 
 const StyledDropdownButton = styled(Dropdown.Toggle)`
-  background-color: ${(props) => props.theme.buttonColorMain};
-  color: ${(props) => props.theme.textColor};
-  border-radius: 5px;
-  border-color: ${(props) => props.theme.borderColor};
+  background-color: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.backgroundColor")};
+  color: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.textColor")};
+  border-radius: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.borderRadius")};;
+  border-color: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.borderColor")};
   min-height: 50px;
-  border-style: ${(props) => props.theme.borderStyle};
+  border-style: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.borderSyle")};
   &:active {
-    background-color: ${(props) => props.theme.buttonActive.backgroundColor};
-    color: ${(props) => props.theme.buttonActive.color};
+    background-color: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.Active.backgroundColor")};
+    color: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.Active.textColor")};
   }
   &:hover {
-    background-color: ${(props) => props.theme.buttonActive.backgroundColor};
-    color: ${(props) => props.theme.buttonActive.color};
+    background-color: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.Active.backgroundColor")};
+    color: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.Active.textColor")};
   }
   &:focus {
-    background-color: ${(props) => props.theme.buttonActive.backgroundColor};
-    color: ${(props) => props.theme.buttonActive.color};
-    border-color: ${(props) => props.theme.borderColor};
+    background-color: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.Active.backgroundColor")};
+    color: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.Active.textColor")};
+    border-color: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.Active.borderColor")};
   }
 `;
 
 const StyledDropDownMenuItem = styled(Dropdown.Item)`
-  background-color: ${(props) => props.theme.buttonColorMain};
-  color: ${(props) => props.theme.textColor};
-  border-radius: 5px;
-  border-color: ${(props) => props.theme.borderColor};
-  border-style: ${(props) => props.theme.borderStyle};
+  background-color: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.backgroundColor")};
+  color: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.textColor")};
+  border-radius: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.borderRadius")};;
+  border-color: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.borderColor")};
+  border-style: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.borderStyle")};
   &:active {
-    background-color: ${(props) => props.theme.buttonActive.backgroundColor};
-    color: ${(props) => props.theme.buttonActive.color};
+    background-color: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.Active.backgroundColor")};
+    color: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.Active.textColor")};
   }
   &:hover {
-    background-color: ${(props) => props.theme.buttonActive.backgroundColor};
-    color: ${(props) => props.theme.buttonActive.color};
+    background-color: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.Active.backgroundColor")};
+    color: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.Active.textColor")};
   }
   &:focus {
-    background-color: ${(props) => props.theme.buttonActive.backgroundColor};
-    color: ${(props) => props.theme.buttonActive.color};
-    border-color: ${(props) => props.theme.borderColor};
+    background-color: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.Active.backgroundColor")};
+    color: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.Active.textColor")};
+    border-color: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.Active.borderColor")};
   }
 `;
 
 const StyledDropDownMenu = styled(Dropdown.Menu)`
-  background-color: ${(props) => props.theme.buttonColorMain};
-  color: ${(props) => props.theme.textColor};
-  border-radius: 5px;
-  border-color: ${(props) => props.theme.borderColor};
-  border-style: ${(props) => props.theme.borderStyle};
+  background-color: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.backgroundColor")};
+  color: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.textColor")};
+  border-radius: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.borderRadius")};;
+  border-color: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.borderColor")};
+  border-style: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.borderStyle")};
   }
 `;
 

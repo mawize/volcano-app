@@ -80,7 +80,6 @@ export default function TargetTemperatureRange() {
               marginBottom: "25px",
               height: "6px",
               maxWidth: "80vw",
-              backgroundColor: "#f53803",
               background: `${theme.get("Button.TemperatureRange.background")}`,
             }}
           >

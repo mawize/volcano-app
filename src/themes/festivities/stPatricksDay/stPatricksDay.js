@@ -37,8 +37,11 @@ const feastOfSaintPatrick = {
       borderColor: "#D9DF1D",
     }
   },
-  workflowEditor: {
-    accordianExpandedColor: "#146B3A",
+  WorkflowEditorAccordionButton: {
+    backgroundColor: "black",
+    Active: { 
+      backgroundColor: "#146B3A",
+    }
   },
   ToggleButton: {
     Slider: {

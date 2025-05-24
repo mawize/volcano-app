@@ -62,7 +62,7 @@ export default function WorkflowDrop(props) {
       ref={drop}
       style={{
         height: isOver && canDrop ? "70px" : "25px",
-        backgroundColor: isOver && canDrop && `${theme.buttonColorMain}`,
+        backgroundColor: isOver && canDrop && `${theme.get("Button.backgroundColor")}`,
         flexGrow: "1",
         transition: "height 0.2s ease",
       }}

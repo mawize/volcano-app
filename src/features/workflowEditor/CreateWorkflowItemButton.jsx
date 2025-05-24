@@ -22,7 +22,7 @@ export default function CreateWorkflowItemButton(props) {
   };
 
   return (
-    <Button onClick={onClick}>
+    <Button hierarchy="Button.SettingsButton.WorkflowEditorButton.WorflowItemButton.WorkflowAddActionButton" onClick={onClick}>
       <PrideText text="Add Action" />
     </Button>
   );

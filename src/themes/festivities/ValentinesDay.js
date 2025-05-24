@@ -38,8 +38,11 @@ const valentinesDay = {
       borderColor: "white",
     }
   },
-  workflowEditor: {
-    accordianExpandedColor: "#ea379d",
+  WorkflowEditorAccordionButton: {
+    backgroundColor: "black",
+    Active: { 
+      backgroundColor: "#ea379d",
+    }
   },
   ToggleButton: {
     Slider: {

@@ -51,8 +51,11 @@ const christmas = {
       borderColor: "#BB2528",
     }
   },
-  workflowEditor: {
-    accordianExpandedColor: "#146B3A",
+  WorkflowEditorAccordionButton: {
+    backgroundColor: "black",
+    Active: { 
+      backgroundColor: "#146B3A",
+    }
   },
   ToggleButton: {
     Slider: {

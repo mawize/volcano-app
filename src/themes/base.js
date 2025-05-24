@@ -44,8 +44,15 @@ const base = () => {
         borderWidth: "3px",
       }
     },
-    workflowEditor: {
-      accordianExpandedColor: "#D2D2D2",
+    WorkflowEditorButton: {      
+      borderRadius: "5px", 
+      borderWidth: "2px",
+    },
+    WorkflowEditorAccordionButton: {
+      backgroundColor: "black",
+      Active: { 
+        backgroundColor: "#D2D2D2",
+      }
     },
     ToggleButton: {
       backgroundColor: "#dc3545",

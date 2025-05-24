@@ -78,7 +78,7 @@ export default function WorkflowConfigEdtior() {
   };
   return (
     <>
-      <Button onClick={handleShow}>
+      <Button hierarchy="Button.SettingsButton.WorkflowEditorButton.WorflowJSONButton.WorkflowEditJSONButton" onClick={handleShow}>
         <PrideText text="Edit/Copy Workflow JSON" />
       </Button>
       <ModalWrapper

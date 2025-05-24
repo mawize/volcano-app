@@ -36,8 +36,11 @@ const light = {
     textColor: "black",
     borderColor: "FF6600",
   },
-  workflowEditor: {
-    accordianExpandedColor: "#FF6600",
+  WorkflowEditorAccordionButton: {
+    backgroundColor: "white",
+    Active: { 
+      backgroundColor: "#FF6600",
+    }
   },
   TemperatureRange: {
     background: "linear-gradient(315deg, #f53803 0%, #f5d020 74%)",

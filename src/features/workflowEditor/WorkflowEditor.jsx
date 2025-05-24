@@ -25,34 +25,21 @@ const WorkflowDiv = styled.div``;
 
 const StyledAccordionHeader = styled(Accordion.Header)`
   .accordion-button {
-    background-color: ${(props) => props.theme.backgroundColor};
-    color: ${(props) => props.theme.textColor};
+    background-color: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.WorkflowEditorAccordionButton.backgroundColor")};
+    color: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.WorkflowEditorAccordionButton.textColor")};
   }
   .accordion-button:not(.collapsed) {
-    color: ${(props) => props.theme.buttonActive.color};
-    background-color: ${(props) =>
-      props.theme.workflowEditor.accordianExpandedColor};
-    border-color: ${(props) => props.theme.buttonActive.borderColor};
+    color: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.WorkflowEditorAccordionButton.Active.textColor")};
+    background-color: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.WorkflowEditorAccordionButton.Active.backgroundColor")};
+    border-color: ${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.WorkflowEditorAccordionButton.Active.borderColor")};
   }
 
   .accordion-button:not(.collapsed)::after {
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='${(
-      props
-    ) =>
-      props.theme.backgroundColor.replace(
-        "#",
-        "%23"
-      )}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.WorkflowEditorAccordionButton.backgroundColor").replace("#","%23")}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
   }
 
   .accordion-button::after {
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='${(
-      props
-    ) =>
-      props.theme.iconColor.replace(
-        "#",
-        "%23"
-      )}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='${(props) => props.theme.get("Button.SettingsButton.WorkflowEditorButton.WorkflowEditorAccordionButton.iconColor").replace("#","%23")}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
   }
 `;
 
@@ -62,8 +49,8 @@ const WorkflowButtonsDiv = styled.div`
 `;
 
 const AccordionItemWrapper = styled(Accordion.Item)`
-  border-color: ${(props) => props.theme.borderColor};
-  color: ${(props) => props.theme.textColor};
+  border-color: ${(props) => props.theme.get("WorkflowEditor.borderColor")};
+  color: ${(props) => props.theme.get("WorkflowEditor.textColor")};
 `;
 
 export default function WorkflowEditor() {

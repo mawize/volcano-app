@@ -33,8 +33,11 @@ const grayscale = {
     textColor: "#E4E6EB",
     borderColor: "#B0B3B8",
   },
-  workflowEditor: {
-    accordianExpandedColor: "#B0B3B8",
+  WorkflowEditorAccordionButton: {
+    backgroundColor: "#18191A",
+    Active: { 
+      backgroundColor: "#B0B3B8",
+    }
   },
   ToggleButton: {
     Slider: {

@@ -31,7 +31,6 @@ export default function SettingsRange({
             borderRadius: ".25rem",
             height: "6px",
             width: "200px",
-            backgroundColor: "#f53803",
             background: `${theme.get("Button.TemperatureRange.background")}`,
             borderWidth: "0px",
           }}

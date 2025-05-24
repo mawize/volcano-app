@@ -67,63 +67,96 @@ function resolveTheme(type) {
   }
 }
 
+function getNestedProperty(theme, path) {
+  let current = theme;
+  for (const part of path) {
+    if (current && typeof current === 'object' && part in current) {
+      current = current[part];
+    } else {
+      return undefined;
+    }
+  }
+  return current;
+}
+
 function resolveProperty(theme, path) {
   const parts = path.split('.');
-  const last = parts[parts.length - 1];
-  const secondToLast = parts[parts.length - 2];
-  const states = ['Active', 'Slider', 'Focus', 'Pressed', 'Hover'];
-  
-  let components, state, property;
-  
-  if (parts.length >= 2 && states.includes(secondToLast)) {
-    state = secondToLast;
-    property = last;
-    components = parts.slice(0, -2);
+  const property = parts.pop(); // Last part is the property
+  const hasState = parts[parts.length - 1] === 'Active'; // Check for state (assuming 'Active' is the only state per hints)
+  let components, state;
+
+  if (hasState) {
+    state = parts.pop(); // Remove state from components
+    components = parts;
   } else {
+    components = parts;
     state = null;
-    property = last;
-    components = parts.slice(0, -1);
   }
-  
-  const compsReversed = components.slice().reverse();
-  
+
+  const checks = [];
+
   if (state) {
-    for (let i = 0; i < compsReversed.length - 1; i++) {
-      for (let j = i + 1; j <= compsReversed.length; j++) {
-        const nestedPath = compsReversed.slice(i, j).reverse().join('.');
-        let current = theme;
-        for (const part of nestedPath.split('.')) {
-          if (current[part]) {
-            current = current[part];
-          } else {
-            current = null;
-            break;
-          }
-        }
-        if (current && current[state] && current[state][property] !== undefined) {
-          return current[state][property];
-        }
+    // With state: Check from most specific to least specific, including secondary component if present
+    if (components.length >= 2 && components[components.length - 1] === 'Slider') {
+      // Handle secondary component (e.g., Slider)
+      const secondary = components.pop();
+      const mainComponent = components.pop();
+      checks.push([mainComponent, secondary, state, property]); // e.g., ToggleButton.Slider.Active.borderColor
+      if (components.length > 0) {
+        checks.push([components[0], secondary, state, property]); // e.g., Button.Slider.Active.borderColor
+      }
+      checks.push([secondary, state, property]); // e.g., Slider.Active.borderColor
+      checks.push([mainComponent, state, property]); // e.g., ToggleButton.Active.borderColor
+      for (let i = components.length - 1; i >= 0; i--) {
+        checks.push([components[i], state, property]); // Parent components with state
+      }
+      checks.push([state, property]); // State alone
+      checks.push([mainComponent, secondary, property]); // With secondary, no state
+      if (components.length > 0) {
+        checks.push([components[0], secondary, property]);
+      }
+      checks.push([secondary, property]);
+      checks.push([mainComponent, property]);
+    } else {
+      // No secondary component
+      for (let i = components.length - 1; i >= 0; i--) {
+        checks.push([components[i], state, property]); // e.g., PlusButton.Active.backgroundColor
+      }
+      checks.push([state, property]); // e.g., Active.backgroundColor
+    }
+    // Without state
+    for (let i = components.length - 1; i >= 0; i--) {
+      checks.push([components[i], property]);
+    }
+  } else {
+    // No state: Check from most specific to least specific
+    if (components.length >= 2 && components[components.length - 1] === 'Slider') {
+      // Handle secondary component
+      const secondary = components.pop();
+      const mainComponent = components.pop();
+      checks.push([mainComponent, secondary, property]); // e.g., ToggleButton.Slider.borderColor
+      if (components.length > 0) {
+        checks.push([components[0], secondary, property]); // e.g., Button.Slider.borderColor
+      }
+      checks.push([secondary, property]); // e.g., Slider.borderColor
+      checks.push([mainComponent, property]); // e.g., ToggleButton.borderColor
+    } else {
+      // No secondary component
+      for (let i = components.length - 1; i >= 0; i--) {
+        checks.push([components[i], property]); // e.g., MinusButton.backgroundColor
       }
     }
-    
-    for (const comp of compsReversed) {
-      if (theme[comp] && theme[comp][state] && theme[comp][state][property] !== undefined) {
-        return theme[comp][state][property];
-      }
-    }
-    
-    if (theme[state] && theme[state][property] !== undefined) {
-      return theme[state][property];
+  }
+  checks.push([property]); // Final fallback
+
+  // Perform checks
+  for (const checkPath of checks) {
+    const value = getNestedProperty(theme, checkPath);
+    if (value !== undefined) {
+      return value;
     }
   }
-  
-  for (const comp of compsReversed) {
-    if (theme[comp] && theme[comp][property] !== undefined) {
-      return theme[comp][property];
-    }
-  }
-  
-  return theme[property];
+  return undefined; // If nothing is found
 }
 
 export default function GetTheme(type) {

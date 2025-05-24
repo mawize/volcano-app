@@ -56,8 +56,11 @@ const pride = {
       borderColor: "white",
     }
   },
-  workflowEditor: {
-    accordianExpandedColor: "#2d3237",
+  WorkflowEditorAccordionButton: {
+    backgroundColor: "black",
+    Active: { 
+      backgroundColor: "#2d3237",
+    }
   },
   ToggleButton: {
     Slider: {

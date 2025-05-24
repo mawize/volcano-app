@@ -71,7 +71,7 @@ export default function AppendWorkflowConfigJson() {
   };
   return (
     <>
-      <Button onClick={handleShow}>
+      <Button hierarchy="Button.SettingsButton.WorkflowEditorButton.WorflowJSONButton.WorkflowAppendJSONButton" onClick={handleShow}>
         <PrideText text="Append Workflow JSON" />
       </Button>
       <ModalWrapper

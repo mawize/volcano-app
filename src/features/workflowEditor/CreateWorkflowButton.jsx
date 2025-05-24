@@ -5,10 +5,12 @@ import { setCurrentWorkflows } from "../settings/settingsSlice";
 import Button from "./shared/WorkflowFooterButtons";
 import styled from "styled-components";
 import PrideText from "../../themes/PrideText";
+
 const StyledButton = styled(Button)`
   width: fit-content;
   margin-top: 0px;
 `;
+
 export default function CreateWorkflowButton(props) {
   const config = useSelector((state) => state.settings.config);
   const dispatch = useDispatch();
@@ -29,7 +31,7 @@ export default function CreateWorkflowButton(props) {
   };
 
   return (
-    <StyledButton onClick={createWorkflow}>
+    <StyledButton hierarchy="Button.SettingsButton.WorkflowEditorButton.WorflowCreateButton" onClick={createWorkflow}>
       <PrideText text="Create New Workflow" />
     </StyledButton>
   );

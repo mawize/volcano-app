@@ -34,8 +34,11 @@ const volcanicAsh = {
     textColor: "white",
     borderColor: "FF6600",
   },
-  workflowEditor: {
-    accordianExpandedColor: "#FF6600",
+  WorkflowEditorAccordionButton: {
+    backgroundColor: "black",
+    Active: { 
+      backgroundColor: "#FF6600",
+    }
   },
   TemperatureRange: {
     background: "linear-gradient(315deg, #f53803 0%, #f5d020 74%)",

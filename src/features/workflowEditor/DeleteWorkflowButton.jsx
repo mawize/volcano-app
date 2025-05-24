@@ -31,7 +31,7 @@ export default function DeleteWorkflowButton(props) {
 
   return (
     <>
-      <Button onClick={handleShow}>
+      <Button hierarchy="Button.SettingsButton.WorkflowEditorButton.WorflowItemButton.WorkflowDeleteButton" onClick={handleShow}>
         <PrideText text="Delete Workflow" />
       </Button>
       <ModalWrapper
