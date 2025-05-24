@@ -3,6 +3,9 @@ const base = () => {
     author: "ImACoderImACoderImACoder",
     borderStyle: "solid",
     borderColor: "darkgray",
+    backgroundColor: "black",
+    textColor: "antiquewhite",
+    iconColor: "rebeccapurple",
     SettingsButton: {
       borderRadius: "5px",
       borderWidth: "2px",
@@ -20,9 +23,6 @@ const base = () => {
     TemperatureDisplay: { 
       textColor: "antiquewhite",
     },
-    backgroundColor: "black",
-    textColor: "antiquewhite",
-    iconColor: "rebeccapurple",
     StartScreen: {
       textColor: "rebeccapurple",
     },
@@ -32,7 +32,7 @@ const base = () => {
     },
     PlusMinusButton: {
       backgroundColor: "black",
-      color: "inherit",
+      textColor: "inherit",
       borderColor: "inherit",
     },
     temperatureRange: {
@@ -49,6 +49,9 @@ const base = () => {
       accordianExpandedColor: "#D2D2D2",
     },
     ToggleButton: {
+      backgroundColor: "#dc3545",
+      borderColor: "#dc3545",
+      textColor: "#fff",
       Slider: {
         backgroundColor: undefined,
         borderColor: "#f8f9fa",
@@ -56,9 +59,6 @@ const base = () => {
           backgroundColor: "gray",
         }
       },
-      backgroundColor: "#dc3545",
-      borderColor: "#dc3545",
-      textColor: "#fff",
       Active: {
         backgroundColor: "#198754",
         borderColor: "#198754",

@@ -90,20 +90,14 @@ const SwitchOffState = styled(SwitchOnState)`
 
 const OnSwitchWithBackgroundImage = styled(SwitchOnState)`
   background: none;
-  background-color: ${(props) =>
-    props.theme.ToggleButton.backgroundImageColorOn};
   background-image: ${(props) => props.theme.ToggleButton.backgroundImageOn};
-  background-blend-mode: ${(props) =>
-    props.theme.ToggleButton.backgroundBlendModeOn};
+  background-blend-mode: ${(props) => props.theme.ToggleButton.backgroundBlendModeOn};
 `;
 
 const OffSwitchWithBackgroundImage = styled(SwitchOffState)`
   background: none;
   background-image: ${(props) => props.theme.ToggleButton.backgroundImageOff};
-  background-color: ${(props) =>
-    props.theme.ToggleButton.backgroundImageColorOff};
-  background-blend-mode: ${(props) =>
-    props.theme.ToggleButton.backgroundBlendModeOff};
+  background-blend-mode: ${(props) => props.theme.ToggleButton.backgroundBlendModeOff};
 `;
 
 const SwitchHandleOn = styled(SwitchOnState)`

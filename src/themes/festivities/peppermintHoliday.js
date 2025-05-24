@@ -71,8 +71,6 @@ const christmas = {
       textColor: "#3C8123",
     },
     backgroundImageOff: ` repeating-linear-gradient(    45deg,    transparent,    transparent 10px,    #3C8123 10px,    #3C8123 20px  ),  /* on "bottom" */  linear-gradient(    to bottom,    #eee,    #999  )`,
-    backgroundImageColorOff: undefined,
-    backgroundImageColorOn: undefined,
     backgroundImageOn: ` repeating-linear-gradient(    315deg,    transparent,    transparent 10px,    #E0302E 10px,    #E0302E 20px  ),  /* on "bottom" */  linear-gradient(    to bottom,    #eee,    #999  )`,
     backgroundBlendModeOff: "multiply",
     backgroundBlendModeOn: "multiply",

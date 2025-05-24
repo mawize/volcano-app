@@ -70,8 +70,6 @@ const christmas = {
     },
     backgroundImageOff:
       "repeating-linear-gradient(45deg, black,black 5px, crimson 5px, crimson 25px,forestgreen 25px,forestgreen 30px),repeating-linear-gradient(-45deg,black,black 5px,black 5px,black 35px,forestgreen 35px,forestgreen 42px);",
-    backgroundImageColorOff: undefined,
-    backgroundImageColorOn: undefined,
     backgroundImageOn: `
     repeating-linear-gradient(
 		to top left,
