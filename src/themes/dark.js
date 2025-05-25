@@ -1,56 +1,52 @@
 import { darkThemeId } from "../constants/themeIds";
 
-const buttonbackgroundColor = "#242526";
+const buttonBackgroundColor = "#242526";
+
 const dark = {
   themeId: darkThemeId,
-  Button: { 
-    backgroundColor: buttonbackgroundColor,
-    Active: {
-      textColor: "darkviolet",
-      backgroundColor: buttonbackgroundColor,
-      borderColor: "darkviolet",
-    }
-  },
-  borderColor: "darkgray",
-  PlusMinusButton: {
-    backgroundColor: buttonbackgroundColor,
-    borderColor: "darkgray",
-  },
   backgroundColor: "black",
   textColor: "antiquewhite",
+  borderStyle: "solid",
+  borderColor: "darkgray",
   iconColor: "darkviolet",
+  Button: { 
+    backgroundColor: buttonBackgroundColor,
+    Active: {
+      textColor: "darkviolet"
+    }
+  },
   StartScreen: {
     textColor: "darkviolet",
   },
   Navigation: {
     borderColor: "darkviolet",
+    textColor: "darkviolet"
   },
   TemperatureRange: {
-    background: "linear-gradient(315deg, #f53803 0%, #f5d020 74%)",
     Slider: {
       background: "black",
       borderColor: "orange",
     }
+  },
+  ToggleButton: {
+    textColor: "#fff",
+    Slider: {
+      borderColor: "#f8f9fa",
+      backgroundColor: "lightgray",
+      Active: {
+        backgroundColor: "lightgray",
+      }
+    },
+    Active: {
+      borderColor: "darkviolet",
+      textColor: "#fff",
+    },
   },
   WorkflowEditorAccordionButton: {
     backgroundColor: "black",
     Active: { 
       backgroundColor: "darkgray",
     }
-  },
-  ToggleButton: {
-    Slider: {
-      backgroundColor: "lightgray",
-      borderColor: "#f8f9fa",
-    },
-    backgroundColor: buttonbackgroundColor,
-    borderColor: "darkgray",
-    textColor: "#fff",
-    Active: {
-      backgroundColor: buttonbackgroundColor,
-      borderColor: "darkviolet",
-      textColor: "#fff",
-    },
   },
 };
 

@@ -67,6 +67,9 @@ function resolveTheme(type) {
   }
 }
 
+const states = ["Active"];
+const secondary_components = ["Slider"];
+
 function getNestedProperty(theme, path) {
   let current = theme;
   for (const part of path) {
@@ -81,82 +84,61 @@ function getNestedProperty(theme, path) {
 
 function resolveProperty(theme, path) {
   const parts = path.split('.');
-  const property = parts.pop(); // Last part is the property
-  const hasState = parts[parts.length - 1] === 'Active'; // Check for state (assuming 'Active' is the only state per hints)
-  let components, state;
-
-  if (hasState) {
-    state = parts.pop(); // Remove state from components
-    components = parts;
-  } else {
-    components = parts;
-    state = null;
+  if (parts.length === 1) {
+    return theme[path];
+  } else if (path === "") {
+    return undefined;
   }
 
-  const checks = [];
+  const property = parts.pop();
+  let state = null;
+  let secondary_component = null;
+
+  if (parts.length > 0 && states.includes(parts[parts.length - 1])) {
+    state = parts.pop();
+  }
+
+  if (parts.length > 0 && secondary_components.includes(parts[parts.length - 1])) {
+    secondary_component = parts.pop();
+  }
+
+  const components = parts;
+  const keysToCheck = [];
+
+  if (secondary_component && state) {
+    for (let i = components.length - 1; i >= 0; i--) {
+      keysToCheck.push([components[i], secondary_component, state, property]);
+    }
+    keysToCheck.push([secondary_component, state, property]);
+  }
+
+  if(secondary_component) {    
+    for (let i = components.length - 1; i >= 0; i--) {
+      keysToCheck.push([components[i], secondary_component, property]);
+    }
+    keysToCheck.push([secondary_component, property]);
+  }
 
   if (state) {
-    // With state: Check from most specific to least specific, including secondary component if present
-    if (components.length >= 2 && components[components.length - 1] === 'Slider') {
-      // Handle secondary component (e.g., Slider)
-      const secondary = components.pop();
-      const mainComponent = components.pop();
-      checks.push([mainComponent, secondary, state, property]); // e.g., ToggleButton.Slider.Active.borderColor
-      if (components.length > 0) {
-        checks.push([components[0], secondary, state, property]); // e.g., Button.Slider.Active.borderColor
-      }
-      checks.push([secondary, state, property]); // e.g., Slider.Active.borderColor
-      checks.push([mainComponent, state, property]); // e.g., ToggleButton.Active.borderColor
-      for (let i = components.length - 1; i >= 0; i--) {
-        checks.push([components[i], state, property]); // Parent components with state
-      }
-      checks.push([state, property]); // State alone
-      checks.push([mainComponent, secondary, property]); // With secondary, no state
-      if (components.length > 0) {
-        checks.push([components[0], secondary, property]);
-      }
-      checks.push([secondary, property]);
-      checks.push([mainComponent, property]);
-    } else {
-      // No secondary component
-      for (let i = components.length - 1; i >= 0; i--) {
-        checks.push([components[i], state, property]); // e.g., PlusButton.Active.backgroundColor
-      }
-      checks.push([state, property]); // e.g., Active.backgroundColor
-    }
-    // Without state
     for (let i = components.length - 1; i >= 0; i--) {
-      checks.push([components[i], property]);
+      keysToCheck.push([components[i], state, property]);
     }
-  } else {
-    // No state: Check from most specific to least specific
-    if (components.length >= 2 && components[components.length - 1] === 'Slider') {
-      // Handle secondary component
-      const secondary = components.pop();
-      const mainComponent = components.pop();
-      checks.push([mainComponent, secondary, property]); // e.g., ToggleButton.Slider.borderColor
-      if (components.length > 0) {
-        checks.push([components[0], secondary, property]); // e.g., Button.Slider.borderColor
-      }
-      checks.push([secondary, property]); // e.g., Slider.borderColor
-      checks.push([mainComponent, property]); // e.g., ToggleButton.borderColor
-    } else {
-      // No secondary component
-      for (let i = components.length - 1; i >= 0; i--) {
-        checks.push([components[i], property]); // e.g., MinusButton.backgroundColor
-      }
-    }
+    keysToCheck.push([state, property]);
   }
-  checks.push([property]); // Final fallback
 
-  // Perform checks
-  for (const checkPath of checks) {
-    const value = getNestedProperty(theme, checkPath);
+  for (let i = components.length - 1; i >= 0; i--) {
+    keysToCheck.push([components[i], property]);
+  }
+  keysToCheck.push([property]);
+
+  for (const key of keysToCheck) {
+    const value = getNestedProperty(theme, key);
     if (value !== undefined) {
       return value;
     }
   }
-  return undefined; // If nothing is found
+
+  return undefined;
 }
 
 export default function GetTheme(type) {
