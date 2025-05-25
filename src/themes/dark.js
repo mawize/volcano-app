@@ -1,6 +1,6 @@
 import { darkThemeId } from "../constants/themeIds";
 
-const buttonBackgroundColor = "#242526";
+const accentColor = "darkviolet";
 
 const dark = {
   themeId: darkThemeId,
@@ -8,19 +8,19 @@ const dark = {
   textColor: "antiquewhite",
   borderStyle: "solid",
   borderColor: "darkgray",
-  iconColor: "darkviolet",
+  iconColor: accentColor,
   Button: { 
-    backgroundColor: buttonBackgroundColor,
+    backgroundColor: "#242526",
     Active: {
-      textColor: "darkviolet"
+      textColor: accentColor,
     }
   },
   StartScreen: {
-    textColor: "darkviolet",
+    textColor: accentColor,
   },
   Navigation: {
-    borderColor: "darkviolet",
-    textColor: "darkviolet"
+    borderColor: accentColor,
+    textColor: accentColor,
   },
   TemperatureRange: {
     Slider: {
@@ -33,12 +33,9 @@ const dark = {
     Slider: {
       borderColor: "#f8f9fa",
       backgroundColor: "lightgray",
-      Active: {
-        backgroundColor: "lightgray",
-      }
     },
     Active: {
-      borderColor: "darkviolet",
+      borderColor: accentColor,
       textColor: "#fff",
     },
   },

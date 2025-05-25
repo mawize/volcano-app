@@ -3,33 +3,26 @@ import { flamingoId } from "../constants/themeIds";
 const flamingo = {
   themeId: flamingoId,
   author: "Alexis",
+  backgroundColor: "black",
+  textColor: "white",
   borderStyle: "solid",
   borderColor: "darkgray",
+  iconColor: "#e8d6ed",
   Button: { 
     backgroundColor: "#e79fec",
     Active: {
-      textColor: "white",
       backgroundColor: "#fccddf",
-      borderColor: "darkgray",
     }
   },
   TemperatureDisplay: {
     textColor: "antiquewhite",
   },
-  backgroundColor: "black",
-  textColor: "white",
-  iconColor: "#e8d6ed",
   StartScreen: {
     textColor: "#e8d6ed",
   },
   Navigation: { 
     textColor: "#e8d6ed",
     borderColor: "#e8d6ed",
-  },
-  PlusMinusButton: {
-    backgroundColor: "#e79fec",
-    textColor: "white",
-    borderColor: "inherit",
   },
   TemperatureRange: {
     background: "linear-gradient(315deg, #e79fec 0%, #fccddf 74%)",
@@ -38,12 +31,6 @@ const flamingo = {
       borderColor: "#fccddf"
     },
   },
-  WorkflowEditorAccordionButton: {
-    backgroundColor: "black",
-    Active: { 
-      backgroundColor: "darkgray",
-    }
-  },
   ToggleButton: {
     Slider: {
       backgroundColor: "white",
@@ -51,12 +38,16 @@ const flamingo = {
     },
     backgroundColor: "#fccddf",
     borderColor: "#fccddf",
-    textColor: "#fff",
     Active: {
       backgroundColor: "#e79fec",
       borderColor: "#e79fec",
-      textColor: "#fff",
     },
+  },
+  WorkflowEditorAccordionButton: {
+    backgroundColor: "black",
+    Active: { 
+      backgroundColor: "darkgray",
+    }
   },
 };
 

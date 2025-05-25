@@ -1,30 +1,22 @@
 import { funId } from "../constants/themeIds";
 
-const buttonbackgroundColor = "#201c1c";
-
 const pride = {
   author: "ImACoderImACoderImACoder",
   themeId: funId,
+  backgroundColor: "black",
+  textColor: "white",
+  borderColor: "#D2D2D2",
+  iconColor: "darkviolet",
   Button: { 
-    backgroundColor: buttonbackgroundColor,
+    backgroundColor: "#201c1c",
     Active: {
-      textColor: "white",
       backgroundColor: "black",
       borderColor: "darkviolet",
     }
   },
-  borderColor: "#D2D2D2",
   TemperatureDisplay: {
     textColor: "#ed75b3",
   },
-  textColor: "white",
-  PlusMinusButton: {
-    backgroundColor: buttonbackgroundColor,
-    borderColor: "#D2D2D2",
-    textColor: "white",
-  },
-  backgroundColor: "black",
-  iconColor: "darkviolet",
   StartScreen: {
     textColor: "darkviolet",
   },
@@ -67,12 +59,18 @@ const pride = {
       backgroundColor: "white",
       borderColor: "#f8f9fa",
     },
-    backgroundColor: buttonbackgroundColor,
     borderColor: "white",
     textColor: "black",
     Active: {
       backgroundColor:
-        "linear-gradient(180deg,rgb(255,0,0) 0% 16.77%,rgb(255 153 0) 16.77% 33.54%,rgb(236 255 0) 33.54% 50.31%,rgb(75 255 0) 50.31% 67.08%,rgb(18 0 255) 67.08% 83.85%,rgb(143,0,255) 83.85% 100%)",
+        `linear-gradient(
+            180deg,
+            rgb(255,0,0) 0% 16.77%,
+            rgb(255,153,0) 16.77% 33.54%,
+            rgb(236,255,0) 33.54% 50.31%,
+            rgb(75,255,0) 50.31% 67.08%,
+            rgb(18,0,255) 67.08% 83.85%,
+            rgb(143,0,255) 83.85% 100%)`,
       borderColor: "gray",
       textColor: "white",
     }
