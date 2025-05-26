@@ -32,7 +32,6 @@ import {
 } from "../../deviceInteraction/deviceInteractionSlice";
 import { setIsF } from "../../settings/settingsSlice";
 import { AddToQueue } from "../../../services/bleQueueing";
-import { feastOfSaintPatrickId } from "../../../constants/themeIds";
 import CurrentWorkflowExecutionDisplay from "../../deviceInteraction/CurrentWorkflowExecutionDisplay.jsx/CurrentWorkflowExecutionDisplay";
 import withScrolling from "react-dnd-scrolling";
 import AutoOff from "../../deviceInteraction/AutoOff/AutoOff";
@@ -216,7 +215,6 @@ export default function VolcanoLoader(props) {
   }, [dispatch]);
 
   const outletStyling = {
-    zIndex: theme.themeId === feastOfSaintPatrickId ? "2" : undefined,
     display: "flex",
     justifyContent: "space-between",
     flexGrow: "1",

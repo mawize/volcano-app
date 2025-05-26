@@ -16,9 +16,9 @@ import WorkflowEditor from "./features/workflowEditor/WorkflowEditor";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { TouchBackend } from "react-dnd-touch-backend";
-import Snowfall from "./features/shared/Snowfall";
 import { isMobile } from "./constants/constants";
 import DragPreview from "./features/workflowEditor/DND/DragPreview";
+
 const Div = styled.div`
   color: ${(props) => props.theme.textColor};
   background-color: ${(props) => props.theme.backgroundColor};
@@ -69,9 +69,6 @@ function App() {
           </Div>
         </ThemeProvider>
       </DndProvider>
-      <>
-        <Snowfall />
-      </>
     </>
   );
 }

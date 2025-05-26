@@ -6,7 +6,6 @@ const dark = {
   themeId: darkThemeId,
   backgroundColor: "black",
   textColor: "antiquewhite",
-  borderStyle: "solid",
   borderColor: "darkgray",
   iconColor: accentColor,
   Button: { 

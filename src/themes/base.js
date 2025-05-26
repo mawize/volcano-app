@@ -1,5 +1,6 @@
 const base = () => {
   return {
+    borderStyle: "solid",
     SettingsButton: {
       borderRadius: "5px",
       borderWidth: "2px",

@@ -12,8 +12,7 @@ import {
   defaultGlobalFanOnTimeInSeconds,
   defaultWorkflows,
 } from "../constants/constants";
-
-import { aSuperSpecialAutoThemeSettingsId } from "../constants/themeIds";
+import { noneId } from "../constants/themeIds";
 
 export function convertToUInt8BLE(val) {
   const buffer = new ArrayBuffer(1);
@@ -91,7 +90,7 @@ export function ReadConfigFromLocalStorage() {
   let config = JSON.parse(window.localStorage.getItem(localStorageKey));
   const defaultConfig = {
     temperatureControlValues: defaultTemperatureArray,
-    currentTheme: aSuperSpecialAutoThemeSettingsId,
+    currentTheme: noneId,
     workflows: {
       items: defaultWorkflows,
       [WorkflowItemTypes.FAN_ON_GLOBAL]: defaultGlobalFanOnTimeInSeconds,

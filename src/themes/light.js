@@ -1,45 +1,30 @@
 import { lightThemeId } from "../constants/themeIds";
 
-const buttonbackgroundColor = "lightgray";
+const accentColor = "#FF6600";
 
 const light = {
   themeId: lightThemeId,
-  author: "ImACoderImACoderImACoder",
-  borderStyle: "solid",
-  borderColor: "#FF6600",
-  Button: { 
-    backgroundColor: buttonbackgroundColor,
-    Active: {
-      textColor: "white",
-      backgroundColor: "#FF6600",
-      borderColor: "white",
-    }
-  },
-  CurrentTemperatureDisplay: {
-    textColor: "#FF6600"
-  },
-  TargetTemperatureDisplay: {
-    textColor: "black"
-  },
+  author: "ImACoderImACoderImACoder",  
   backgroundColor: "white",
   textColor: "black",
-  iconColor: "#FF6600",
+  borderColor: accentColor,
+  iconColor: accentColor,
   StartScreen: {
-    textColor: "#FF6600",
+    textColor: accentColor,
   },
   Navigation: { 
     textColor: "black",
-    borderColor: "#FF6600", 
+    borderColor: accentColor, 
   },
-  PlusMinusButton: {
-    backgroundColor: buttonbackgroundColor,
-    textColor: "black",
-    borderColor: "FF6600",
+  CurrentTemperatureDisplay: {
+    textColor: accentColor
   },
-  WorkflowEditorAccordionButton: {
-    backgroundColor: "white",
-    Active: { 
-      backgroundColor: "#FF6600",
+  Button: { 
+    backgroundColor: "lightgray",
+    Active: {
+      textColor: "white",
+      backgroundColor: accentColor,
+      borderColor: "white",
     }
   },
   TemperatureRange: {
@@ -51,19 +36,19 @@ const light = {
   },
   ToggleButton: {
     Slider: {
-      backgroundColor: buttonbackgroundColor,
       borderColor: "#f8f9fa",
-      Active: {
-        backgroundColor: "#FF6600",
-      }
     },
-    backgroundColor: buttonbackgroundColor,
     borderColor: "black",
-    textColor: "black",
     Active: {
-      backgroundColor: "#FF6600",
+      backgroundColor: accentColor,
       borderColor: "black",
-      textColor: "#fff",
+      textColor: "white",
+    }
+  },
+  WorkflowEditorAccordionButton: {
+    backgroundColor: "white",
+    Active: { 
+      backgroundColor: accentColor,
     }
   },
 };
